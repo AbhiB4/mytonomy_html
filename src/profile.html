@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>MyTonomy- Dashboard</title>   
+ 
+    
+  	<link href='https://fonts.googleapis.com/css?family=Roboto:400,500,300,100,700,900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+	  <link rel="stylesheet" href="css/bootstrap.min.css">
+	  <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+	  <link rel="stylesheet" href="css/jquery-filestyle.min.css">
+	  <link rel="stylesheet" href="css/chosen.min.css">
+	<link href="css/style.css" rel="stylesheet">  
+    <link href="css/media.css" rel="stylesheet">  
+  	
+
+  </head>
+<body >
+  <div class="wrapper">
+<!-- Header of the page -->
+<header>
+  <nav class="navbar navbar-default navbar-fixed-top login-head">  
+    <div class="row">
+      <div class="col-sm-5 col-md-7">
+        <a href="#" class="logo">
+          <img src="images/h-symbol.png" class="sym-img"><span class="viva-text">VIVA HOSPITAL</span>
+        </a>
+      </div>
+      <div class="col-sm-7 col-md-5 text-right">
+        
+        <div class="left_head">
+          <div class="dropdown">
+              <div class=" dropdown-toggle" type="button" data-toggle="dropdown">
+                <span class="caret"></span>
+              </div>
+            <ul class="dropdown-menu pull-right">
+              <li><a href="#">Action</a></li>
+              <li><a href="#">Another action</a></li>
+              <li><a href="#">Something else here</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="#">Separated link</a></li>
+            </ul>
+          </div>
+          
+          <img src="images/usr-img.jpg" class="usr-img">
+          <span class="procedure-txt">Jane Brown</span>
+          <span class="details-txt">Patient</span>
+        </div>
+        <div class="right_head">
+          <img src="images/help-img.png" class="help-img">
+          <span>Help</span>
+        </div>
+      </div>
+    </div>   
+  </nav>
+</header>
+
+
+<!-- Side bar of the page -->
+<div class="side-bar">
+  <ul>
+    <li class="text-center">
+      <a href="#">
+        <i class="sidebar_icon fa fa-file-text"></i>
+        <span class="step-proc-text">
+          My Instructions
+        </span>
+      </a>
+    </li>
+
+    <li class="text-center">
+      <a href="#">
+        <i class="sidebar_icon fa fa-stethoscope"></i>
+        <span class="step-proc-text">
+          Care Team
+        </span>
+      </a>
+    </li>
+    
+    <li class="text-center">
+      <a href="#">
+        <i class="sidebar_icon fa fa-hospital-o"></i>
+        <span class="step-proc-text">
+          My Hospital
+        </span>
+      </a>
+    </li>
+  </ul>
+  
+</div>
+
+
+
+<!-- main section of the page -->
+<section class="app-wrappper full-wrapper">
+	<div class="inner-wrapper">
+		<div class="row">
+			<div class="col-md-12">
+				<h1>profile</h1>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-12">
+				<div class="profile">
+					<div class="media"> 
+						<div class="media-left">
+							<p><img class="media-object" src="images/usr-img.jpg" >
+								<a href="#"> Change Picture </a> 
+							</p>
+							
+							
+						</div> 
+						<div class="media-body"> 
+							<h4 class="media-heading">Jane Brown</h4> 
+							<h5>My current health conditions include:<span> Surgery, Broken finger, Anxiety</span></h5>
+							<div class="block">
+								<h6>Personal Info</h6>
+								<p>Gender<strong>Female</strong></p>
+								<p>DOB<strong>03/23/1981</strong></p>
+								<p>Preferred language<strong>English</strong></p>
+							</div>
+							<div class="block block2">
+								<h6>Contact Info</h6>
+								<p>Email<strong>jane.brown@gmail.com</strong></p>
+								<p>Phone<strong>(202) 123 - 4567</strong></p>
+							</div>
+							<div class="block block2">
+								<h6>Procedure Details</h6>
+								<p>Procedure Date<strong>Sep. 25, 2015</strong></p>
+								<p>Procedure Time<strong>8 AM</strong></p>
+							</div>
+							<div class="block block2">
+								<h6>Account</h6>
+								<p>Password<strong>Change Password</strong></p>
+								<p>Account<strong>Delete My Account</strong></p>
+							</div>
+						</div> 
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+</div>
+ 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/login.js"></script>
+	<script type="text/javascript" src="js/jquery.mCustomScrollbar.js"></script>
+    <script type="text/javascript" src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script type="text/javascript" src="js/chosen.jquery.min.js"></script>
+    <script type="text/javascript" src="js/chosen.proto.min.js"></script>
+    <script type="text/javascript" src="js/jquery-filestyle.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap-timepicker.js"></script>
+    
+	<script>
+		$(document).ready(function(){
+			
+			$("#patientModal").modal("show"); //modal
+			 $("#patientModal .modal-body").mCustomScrollbar({
+			 theme: 'dark'
+			 }); //scrollbar custom
+			$(":file").jfilestyle({buttonText: "Find file"});
+			
+			
+			
+			
+			$('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {    
+				var target = $(this).attr('href');
+
+				$(target).css('left','-'+$(window).width()+'px');   
+				var left = $(target).offset().left;
+				$(target).css({left:left}).animate({"left":"0px"}, "10");
+			});
+			$(".icon").click(function(){
+				$(this).toggleClass("open");
+			});
+		});
+//center-align-modal
+			(function ($) {
+			"use strict";
+			function centerModal() {
+				$(this).css('display', 'block');
+				var $dialog  = $(this).find(".modal-dialog"),
+				offset       = ($(window).height() - $dialog.height()) / 2,
+				bottomMargin = parseInt($dialog.css('marginBottom'), 10);
+
+				// Make sure you don't hide the top part of the modal w/ a negative margin if it's longer than the screen height, and keep the margin equal to the bottom margin of the modal
+				if(offset < bottomMargin) offset = bottomMargin;
+				$dialog.css("margin-top", offset);
+			}
+
+			$(document).on('show.bs.modal', '.modal', centerModal);
+			$(window).on("resize", function () {
+				$('.modal:visible').each(centerModal);
+			});
+		}(jQuery));
+
+//==============================
+$(".chosen-select").chosen();
+$('#timepicker').timepicker({
+	showSeconds: true,
+
+});
+
+	</script>
+	</body>
+</html>

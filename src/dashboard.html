@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>MyTonomy- Dashboard</title>   
+ 
+    
+  	<link href='https://fonts.googleapis.com/css?family=Roboto:400,500,300,100,700,900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+	  <link rel="stylesheet" href="css/bootstrap.min.css">
+	  <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+	  <link rel="stylesheet" href="css/jquery-filestyle.min.css">
+	<link href="css/style.css" rel="stylesheet">  
+    <link href="css/media.css" rel="stylesheet">  
+  	
+
+  </head>
+<body >
+  <div class="wrapper">
+<!-- Header of the page -->
+<header>
+  <nav class="navbar navbar-default navbar-fixed-top login-head">  
+    <div class="row">
+      <div class="col-sm-6 col-md-7">
+        <a href="#" class="logo">
+          <img src="images/h-symbol.png" class="sym-img"><span class="viva-text">VIVA HOSPITAL</span>
+        </a>
+      </div>
+      <div class="col-sm-6 col-md-5 text-right">
+        
+        <div class="left_head">
+          <div class="dropdown">
+              <div class=" dropdown-toggle" type="button" data-toggle="dropdown">
+                <span class="caret"></span>
+              </div>
+            <ul class="dropdown-menu pull-right">
+              <li><a href="#">Action</a></li>
+              <li><a href="#">Another action</a></li>
+              <li><a href="#">Something else here</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="#">Separated link</a></li>
+            </ul>
+          </div>
+          
+          <img src="images/usr-img.jpg" class="usr-img">
+          <span class="procedure-txt">Jane Brown</span>
+          <span class="details-txt">Patient</span>
+        </div>
+        <div class="right_head">
+          <img src="images/help-img.png" class="help-img">
+          <span>Help</span>
+        </div>
+      </div>
+    </div>   
+  </nav>
+</header>
+
+
+<!-- Side bar of the page -->
+<div class="side-bar">
+  <ul>
+    <li class="text-center">
+      <a href="#">
+        <i class="sidebar_icon fa fa-file-text"></i>
+        <span class="step-proc-text">
+          My Instructions
+        </span>
+      </a>
+    </li>
+
+    <li class="text-center">
+      <a href="#">
+        <i class="sidebar_icon fa fa-stethoscope"></i>
+        <span class="step-proc-text">
+          Care Team
+        </span>
+      </a>
+    </li>
+    
+    <li class="text-center">
+      <a href="#">
+        <i class="sidebar_icon fa fa-hospital-o"></i>
+        <span class="step-proc-text">
+          My Hospital
+        </span>
+      </a>
+    </li>
+  </ul>
+  
+</div>
+
+
+
+<!-- main section of the page -->
+<div class="care-team">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+		  <div class="heading-text">
+			<p class="head-text">My Cardiac Catherization is scheduled for September 25,2015 at Viva Hospital</p>
+			<p class="step-text"><strong>Next step:</strong> Finish watching "Prepare for Work Absence". <a href="#"><strong></strong>Click here to resume</a></p>
+		  </div>
+      </div>
+    </div>
+ 	<div class="row">
+		<div class="col-md-12">
+			<div class="timeline-block">
+			  <ul class="timeline" >
+				<li class="active"><a href="#pre" data-toggle="tab">1. Pre<span>32% Completed</span></a></li>
+				<li><a href="#procedure" data-toggle="tab">2. Procedure<span>0% Completed</span></a></li>
+				<li><a href="#post" data-toggle="tab">3. Post Care<span>0% Completed</span></a></li>
+				<li><a href="#discharge" data-toggle="tab">4. Discharge<span>0% Completed</span></a></li>
+				<li ><a href="#ongoing" data-toggle="tab">5. Ongoing<span>0% Completed</span></a></li>
+			  </ul>
+			  <div class="tab-content">
+				<div role="tabpanel" class="tab-pane fade in active" id="pre">
+				 	<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+						<div class="panel-heading"  id="headingOne">
+						  <h4 class="panel-title">
+							<a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+								<div class="heading">
+									<span class="icon open"></span> Prepare For Your Procedure
+									<span class="n_vid">6 Videos</span>
+									<span class="comp">33% Completed</span>
+								</div>
+							</a>
+						  </h4>
+						</div>
+						<div id="collapseOne" class="collapse in" aria-labelledby="headingOne">
+						  <div class="panel-body">
+							<div class="block">
+								<div class="inner-block">
+									<p class="completion"><span class="glyphicon glyphicon-ok"></span> Completed</p>
+									<img src="images/vid-thumb.jpg">
+									<p class="duration">2:39</p>
+								</div>
+								<div class="progress-bar"></div>
+								<p>Gather and Report all Medications</p>
+							</div>
+							  <div class="block">
+								<div class="inner-block">
+									<p class="completion"><span class="glyphicon glyphicon-ok"></span> Completed</p>
+									<img src="images/vid-thumb.jpg">
+									<p class="duration">2:39</p>
+								</div>
+								<div class="progress-bar"></div>
+								<p>Gather and Report all Medications</p>
+							</div>
+							  <div class="block">
+								<div class="inner-block">
+									<p class="completion"><span class="glyphicon glyphicon-ok"></span> Completed</p>
+									<img src="images/vid-thumb.jpg">
+									<p class="duration">2:39</p>
+								</div>
+								<div class="progress-bar"></div>
+								<p>Gather and Report all Medications</p>
+							</div>
+							  <div class="block">
+								<div class="inner-block">
+									<p class="completion"><span class="glyphicon glyphicon-ok"></span> Completed</p>
+									<img src="images/vid-thumb.jpg">
+									<p class="duration">2:39</p>
+								</div>
+								<div class="progress-bar"></div>
+								<p>Gather and Report all Medications</p>
+							</div>
+							  <div class="block">
+								<div class="inner-block">
+									<p class="completion"><span class="glyphicon glyphicon-ok"></span> Completed</p>
+									<img src="images/vid-thumb.jpg">
+									<p class="duration">2:39</p>
+								</div>
+								<div class="progress-bar"></div>
+								<p>Gather and Report all Medications</p>
+							</div>
+							  <div class="block">
+								<div class="inner-block">
+									<p class="completion"><span class="glyphicon glyphicon-ok"></span> Completed</p>
+									<img src="images/vid-thumb.jpg">
+									<p class="duration">2:39</p>
+								</div>
+								<div class="progress-bar"></div>
+								<p>Gather and Report all Medications</p>
+							</div>
+							  
+							  
+						  </div>
+						</div>
+						<div class="panel-heading" role="tab" id="headingTwo">
+						  <h4 class="panel-title">
+							<a  data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+							 	<div class="heading">
+									<span class="icon"></span> Meeting Your Care Team 
+									<span class="n_vid">6 Videos</span>
+									<span class="comp">33% Completed</span>
+								</div>
+							</a>
+						  </h4>
+						</div>
+						<div id="collapseTwo" class="panel-collapse collapse" aria-labelledby="headingTwo">
+						  <div class="panel-body">
+							<div class="block">
+								<div class="inner-block">
+									<p class="completion"><span class="glyphicon glyphicon-ok"></span> Completed</p>
+									<img src="images/vid-thumb.jpg">
+									<p class="duration">2:39</p>
+								</div>
+								<div class="progress-bar"></div>
+								<p>Gather and Report all Medications</p>
+							</div>
+							  <div class="block">
+								<div class="inner-block">
+									<p class="completion"><span class="glyphicon glyphicon-ok"></span> Completed</p>
+									<img src="images/vid-thumb.jpg">
+									<p class="duration">2:39</p>
+								</div>
+								<div class="progress-bar"></div>
+								<p>Gather and Report all Medications</p>
+							</div>
+							  <div class="block">
+								<div class="inner-block">
+									<p class="completion"><span class="glyphicon glyphicon-ok"></span> Completed</p>
+									<img src="images/vid-thumb.jpg">
+									<p class="duration">2:39</p>
+								</div>
+								<div class="progress-bar"></div>
+								<p>Gather and Report all Medications</p>
+							</div>
+							  <div class="block">
+								<div class="inner-block">
+									<p class="completion"><span class="glyphicon glyphicon-ok"></span> Completed</p>
+									<img src="images/vid-thumb.jpg">
+									<p class="duration">2:39</p>
+								</div>
+								<div class="progress-bar"></div>
+								<p>Gather and Report all Medications</p>
+							</div>
+							  <div class="block">
+								<div class="inner-block">
+									<p class="completion"><span class="glyphicon glyphicon-ok"></span> Completed</p>
+									<img src="images/vid-thumb.jpg">
+									<p class="duration">2:39</p>
+								</div>
+								<div class="progress-bar"></div>
+								<p>Gather and Report all Medications</p>
+							</div>
+							  <div class="block">
+								<div class="inner-block">
+									<p class="completion"><span class="glyphicon glyphicon-ok"></span> Completed</p>
+									<img src="images/vid-thumb.jpg">
+									<p class="duration">2:39</p>
+								</div>
+								<div class="progress-bar"></div>
+								<p>Gather and Report all Medications</p>
+							</div>
+							  
+							  
+						  </div>
+						</div>
+						<div class="panel-heading" role="tab" id="headingThree">
+						  <h4 class="panel-title">
+							<a  data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+							  <div class="heading">
+									<span class="icon"></span> Understanding Your Condition
+									<span class="n_vid">6 Videos</span>
+									<span class="comp">33% Completed</span>
+								</div>
+							</a>
+						  </h4>
+						</div>
+						<div id="collapseThree" class="panel-collapse collapse" aria-labelledby="headingThree">
+						  <div class="panel-body">
+							<div class="block">
+								<div class="inner-block">
+									<p class="completion"><span class="glyphicon glyphicon-ok"></span> Completed</p>
+									<img src="images/vid-thumb.jpg">
+									<p class="duration">2:39</p>
+								</div>
+								<div class="progress-bar"></div>
+								<p>Gather and Report all Medications</p>
+							</div>
+							  <div class="block">
+								<div class="inner-block">
+									<p class="completion"><span class="glyphicon glyphicon-ok"></span> Completed</p>
+									<img src="images/vid-thumb.jpg">
+									<p class="duration">2:39</p>
+								</div>
+								<div class="progress-bar"></div>
+								<p>Gather and Report all Medications</p>
+							</div>
+							  <div class="block">
+								<div class="inner-block">
+									<p class="completion"><span class="glyphicon glyphicon-ok"></span> Completed</p>
+									<img src="images/vid-thumb.jpg">
+									<p class="duration">2:39</p>
+								</div>
+								<div class="progress-bar"></div>
+								<p>Gather and Report all Medications</p>
+							</div>
+							  <div class="block">
+								<div class="inner-block">
+									<p class="completion"><span class="glyphicon glyphicon-ok"></span> Completed</p>
+									<img src="images/vid-thumb.jpg">
+									<p class="duration">2:39</p>
+								</div>
+								<div class="progress-bar"></div>
+								<p>Gather and Report all Medications</p>
+							</div>
+							  <div class="block">
+								<div class="inner-block">
+									<p class="completion"><span class="glyphicon glyphicon-ok"></span> Completed</p>
+									<img src="images/vid-thumb.jpg">
+									<p class="duration">2:39</p>
+								</div>
+								<div class="progress-bar"></div>
+								<p>Gather and Report all Medications</p>
+							</div>
+							  <div class="block">
+								<div class="inner-block">
+									<p class="completion"><span class="glyphicon glyphicon-ok"></span> Completed</p>
+									<img src="images/vid-thumb.jpg">
+									<p class="duration">2:39</p>
+								</div>
+								<div class="progress-bar"></div>
+								<p>Gather and Report all Medications</p>
+							</div>
+							  
+							  
+						  </div>
+						</div>
+					</div>
+				  </div>
+				<div  class="tab-pane fade" id="procedure"><div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+						<div class="panel-heading"  id="headingOne">
+						  <h4 class="panel-title">
+							<a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+								<div class="heading">
+									<span class="icon"></span> Prepare For Your Procedure
+									<span class="n_vid">6 Videos</span>
+									<span class="comp">33% Completed</span>
+								</div>
+							</a>
+						  </h4>
+						</div>
+						<div id="collapseOne" class="collapse in" aria-labelledby="headingOne">
+						  <div class="panel-body">
+							<div class="block">
+								<div class="inner-block">
+									<p class="completion"><span class="glyphicon glyphicon-ok"></span> Completed</p>
+									<img src="images/vid-thumb.jpg">
+									<p class="duration">2:39</p>
+								</div>
+								<div class="progress-bar"></div>
+								<p>Gather and Report all Medications</p>
+							</div>
+							  <div class="block">
+								<div class="inner-block">
+									<p class="completion"><span class="glyphicon glyphicon-ok"></span> Completed</p>
+									<img src="images/vid-thumb.jpg">
+									<p class="duration">2:39</p>
+								</div>
+								<div class="progress-bar"></div>
+								<p>Gather and Report all Medications</p>
+							</div>
+							  <div class="block">
+								<div class="inner-block">
+									<p class="completion"><span class="glyphicon glyphicon-ok"></span> Completed</p>
+									<img src="images/vid-thumb.jpg">
+									<p class="duration">2:39</p>
+								</div>
+								<div class="progress-bar"></div>
+								<p>Gather and Report all Medications</p>
+							  </div>
+							  
+							  
+						  </div>
+						</div>
+
+					</div>
+				  </div>
+				<div class="tab-pane fade" id="post"></div>
+				<div  class="tab-pane fade" id="discharge"></div>
+				<div  class="tab-pane fade" id="ongoing"></div>
+			  </div>
+
+			</div>
+		</div>  
+	</div>
+  </div>
+  <footer>
+   <div class="copyright">Copyright &copy; Viva Hospital 2015</div>
+	</footer>
+</div>
+</div>
+<!-- Modal -->
+<div class="modal fade in" id="patientModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			<span aria-hidden="true">&times;</span>
+		</button>
+        <h4 class="modal-title" id="myModalLabel">Patient Study Consent</h4>
+      </div>
+      <div class="modal-body">
+		  <small>Last Update on July 10, 2015</small>
+        <h3>Effects of a video-based patient education platform on patient satisfaction</h3>
+		  <h4>INTRODUCTION</h4>
+		  <p>We are asking you to be in a research study conducted by researchers at MedStar SiTEL. You do not have to be in the study. You must make a decision as to whether your want to participate in the study or not. Your participation will help us learn how to help you understand your medical care better, and we hope you choose to participate but the choice is entirely yours</p>
+		  <p>You must make a decision; </p>
+		  <ul>
+		  	<li>If you say "Yes, I want to Participate” you will be asked some questions before and after you use the microlearning system which should take no more than 5 minutes to answer. You can quit the study at any time for any reason.</li>
+			  <li>If you say "No, I do not want to participate" you can still access everything in the patient education center and your medical care will not change in any way.</li>
+		  </ul>
+		  <h4>WHAT IS THE PURPOSE OF THIS STUDY?</h4>
+		  <p>This study will help us learn more about the usefulness of a video based patient education platform that can be accessed through a mobile or other electronic device. </p>
+		  <h4>WHAT ELSE SHOULD I KNOW ABOUT THIS RESEARCH STUDY?</h4>
+		  <p>It is important that you read and understand several points that apply to all who take part in our studies:</p>
+		  <ul>
+		  	<li>aking part in the study is entirely voluntary and refusal to participate will not affect any rights or benefits you normally have;</li>
+			<li>You may or may not benefit from taking part in the study, but knowledge may be gained from your participation that may help others; and</li>
+			<li>You may stop being in the study at any time without any penalty or losing any of the benefits you would have normally received.</li>
+		  </ul>
+			  <p>The nature of the study, the benefits, risks, discomforts and other information about the study are discussed further below.  If any new information is learned, at any time during the research, which might affect your participation in the study, we will tell you.  We urge you to ask any questions you have about this study with the staff members who explain it to you and with your own advisors prior to agreeing to participate.</p>
+			  <h4>WHAT HAPPENS IF I DON’T AGREE TO BE IN THE STUDY?</h4>
+			  <p>No one will treat you differently. You will not be penalized. You will still have access to the education. The care you get from your doctor will not change.</p>
+			  <h4>WHAT HAPPENS IF I DON’T AGREE TO BE IN THE STUDY?</h4>
+			  <p>Your participation in the study will include surveys before getting education and after you complete the education following your procedure. The surveys can be completed at your earliest convenience, and will take no longer than 10 minutes to complete. </p>
+			  <h4>WHAT ARE THE RISKS AND SIDE EFFECTS OF THIS STUDY?</h4>
+			  <p>There is a chance that the questions could make you uncomfortable, or that someone could find out you were in the study and learn something about you that you did not want others to know. We will do our best to protect your privacy.</p>
+			  <h4>ARE THERE ANY BENEFITS TO TAKING PART IN THE STUDY?</h4>
+			  <p>You may learn about your self and your ability to care for yourself, your confidence levels and other aspects, but the study will likely not have any direct impact. It may help improve the way patients receive education in the future and your contributions are valued."</p>
+			  <h4>WHAT OTHER OPTIONS ARE THERE?</h4>
+			  <p>The only alternative to is to not participate. You always have the option to not be involved.</p>
+			  <h4>WHAT ABOUT CONFIDENTIALITY?</h4>
+			  <p>The only people allowed to see your answers will be the people who work on the study and people who make sure we run our study the right way. </p>
+			  <p>Your survey answers and a copy of this document will be locked in our files. We will not put your answers into your medical record.</p>
+			  <p>If we share the results of the study in outside medical journals or presentations, we will not include your name. We will do our best to make sure no one outside the study will know you are a part of the study.</p>
+			  <h4>WILL I BE PAID FOR PARTICIPATING IN THIS STUDY?</h4>
+			  <p>No, you will not be paid for taking part in this study.</p>
+			  <h4>WHAT ARE THE COSTS?</h4>
+			  <p>You do not have to pay anything to be in this study.</p>
+			  <h4>WHAT ARE MY RIGHTS AS A PARTICIPANT?</h4>
+			  <ul>
+			  		<li>You have the right to be told about the nature and purpose of the study;</li>
+					<li>You have the right to be given an explanation of exactly what will be done in the study and given a description of potential risks, discomforts, or </li>
+					<li>benefits that can reasonably be expected;</li>
+					<li>You have the right to be informed of any appropriate alternatives to the study; </li>
+					<li>You have the right to ask any questions you may have about the study;</li>
+					<li>You have the right to decide whether or not to be in the study without anyone misleading or deceiving you; and </li>
+					<li>You have the right to receive a copy of this consent form.</li>
+			  </ul>
+			  <p>By signing the document you are saying:</p>
+			  <ul>
+			  		<li>You agree to be in the study.</li>
+					<li>We talked with you about the information in this document and answered all your questions.</li>
+			  </ul>
+			  <p>You know that:</p>
+			  <ul>
+			  		<li>You can skip questions you do not want to answer.</li>
+					<li>You can stop answering our questions at any time and nothing will happen to you.</li>
+					<li>You can call the office in charge of research at 202-888-9248 if you have any questions about the study or about your rights.</li>
+			  </ul>
+			  <h4>WHO DO I CALL IF I HAVE QUESTIONS OR PROBLEMS?</h4>
+			  <p>For questions about the study or this informed consent document, contact the investigator, Alex Walker, at 202-888-9248.</p>
+			  <p>For questions about your rights as a research participant, contact the MedStar Health Research Institute.  Direct your questions to the Office of Research Integrity at:</p>
+		  <div class="row">
+		  	<div class="col-md-5">
+			  <address>
+			  	<p><strong>Address</strong></p>
+				<p>MedStar Health Research Institute<br >
+					6525 Belcrest Rd.<br >
+					Suite 700<br >
+					Hyattsville, MD 20782</p>
+			  	
+			  </address>
+			</div>
+		  	<div class="col-md-3 col-md-offset-4">
+				<div class="phone">
+			  	<p><strong>Telephone:</strong> (301) 560-2912</p>
+				  <p><strong>Toll Free:</strong> (800) 793-7175</p>
+				  <p><strong>Fax</strong> (301) 560-7336</p>
+			  </div>
+			  </div>
+		  </div>
+			  
+			  
+			  <h4>SIGNATURES</h4>
+			  <p>As a representative of this study, I have explained the purpose, the procedures, the possible benefits and risks that are involved in this research study.  Any questions that have been raised have been answered to the individual’s satisfaction.</p>
+			  <p class="sign_underline"><strong class="pull-left">Signature of Person Obtaining Consent</strong><strong class="pull-right" >Date of Signature</strong></p>
+		  		<p class="half-line" ><strong>Printed Name of Individual Obtaining Consent:</strong> <span></span></p>
+			  <p>I, the undersigned have been informed about this study’s purpose, procedures, possible benefits and risks, and I have received a copy of this consent.  I have been given the opportunity to ask questions before I sign, and I have been told that I can ask other questions at any time.  I voluntarily agree to be in this study.  I am free to stop being in the study at any time without need to justify my decision and if I stop being in the study I understand it will not in any way affect my future treatment or medical management.  I agree to cooperate with Alex Walker and the research staff and to tell them immediately if I experience any unexpected or unusual symptoms.</p>
+			  
+			  <form>
+				  <div class="form-group">
+					  <label><strong>Participants signature</strong></label>
+			  		<input type="file" class="jfilestyle" data-buttonText="Browse">
+			  	  </div>
+				  <div class="form-group">
+					  <textarea></textarea>
+				  </div>
+				  <div class="form-group btnrow">
+				  	<input type="submit" class="btn btn-primary" value="Sign">
+					  <input type="reset" class="btn btn-default" value="Cancel">
+				  </div>
+				  <div class="form-group ">
+				  	<label><strong>Name of Participant</strong></label>
+				  </div>
+				  <div class="form-group">
+				  	<input type="text"  placeholder="First Name">
+					  <input type="text"  placeholder="Last Name">
+				  </div>
+			  </form>
+			  <p>As the Principal Investigator (or his designee) for this research study, I attest that the participant has voluntarily agreed to be part of this study, the risks and benefits of the study have been fully explained, and any questions have been addressed to the participant’s satisfaction.</p>
+		  <p class="sign_underline"><strong class="pull-left">Signature of Person Obtaining Consent</strong><strong  class="pull-right">Date of Signature</strong></p>
+      </div>
+      <div class="modal-footer">
+		  <div class="btnrow">
+			<button type="button" class="btn btn-default" data-dismiss="modal">Decline</button>
+			<button type="button" class="btn btn-primary">Accept</button>
+		  </div>
+      </div>
+    </div>
+  </div>
+</div>
+</body> 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/login.js"></script>
+	<script type="text/javascript" src="js/jquery.mCustomScrollbar.js"></script>
+    <script type="text/javascript" src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script type="text/javascript" src="js/jquery-filestyle.min.js"></script>
+    
+	<script>
+		$(document).ready(function(){
+			
+			$("#patientModal").modal("show"); //modal
+			 $("#patientModal .modal-body").mCustomScrollbar({
+			 theme: 'dark'
+			 }); //scrollbar custom
+			$(":file").jfilestyle({buttonText: "Find file"});
+			
+			
+			
+			$('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {    
+				var target = $(this).attr('href');
+
+				$(target).css('left','-'+$(window).width()+'px');   
+				var left = $(target).offset().left;
+				$(target).css({left:left}).animate({"left":"0px"}, "10");
+			});
+			$(".icon").click(function(){
+				$(this).toggleClass("open");
+			});
+		
+		});
+//center-align-modal
+			(function ($) {
+			"use strict";
+			function centerModal() {
+				$(this).css('display', 'block');
+				var $dialog  = $(this).find(".modal-dialog"),
+				offset       = ($(window).height() - $dialog.height()) / 2,
+				bottomMargin = parseInt($dialog.css('marginBottom'), 10);
+
+				// Make sure you don't hide the top part of the modal w/ a negative margin if it's longer than the screen height, and keep the margin equal to the bottom margin of the modal
+				if(offset < bottomMargin) offset = bottomMargin;
+				$dialog.css("margin-top", offset);
+			}
+
+			$(document).on('show.bs.modal', '.modal', centerModal);
+			$(window).on("resize", function () {
+				$('.modal:visible').each(centerModal);
+			});
+		}(jQuery));
+	</script>
+	
+</html>

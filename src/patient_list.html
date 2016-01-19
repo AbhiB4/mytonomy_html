@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>MyTonomy- Dashboard</title>   
+ 
+    
+  	<link href='https://fonts.googleapis.com/css?family=Roboto:400,500,300,100,700,900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+	  <link rel="stylesheet" href="css/bootstrap.min.css">
+	  <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+	  <link rel="stylesheet" href="css/jquery-filestyle.min.css">
+	<link href="css/style.css" rel="stylesheet">  
+    <link href="css/media.css" rel="stylesheet">  
+  	
+
+  </head>
+<body >
+  <div class="wrapper">
+<!-- Header of the page -->
+<header>
+  <nav class="navbar navbar-default navbar-fixed-top login-head">  
+    <div class="row">
+      <div class="col-sm-6 col-md-7">
+        <a href="#" class="logo">
+          <img src="images/h-symbol.png" class="sym-img"><span class="viva-text">VIVA HOSPITAL</span>
+        </a>
+      </div>
+      <div class="col-sm-6 col-md-5 text-right">
+        
+        <div class="left_head">
+          <div class="dropdown">
+              <div class=" dropdown-toggle" type="button" data-toggle="dropdown">
+                <span class="caret"></span>
+              </div>
+            <ul class="dropdown-menu pull-right">
+              <li><a href="#">Action</a></li>
+              <li><a href="#">Another action</a></li>
+              <li><a href="#">Something else here</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="#">Separated link</a></li>
+            </ul>
+          </div>
+          
+          <img src="images/usr-img.jpg" class="usr-img">
+          <span class="procedure-txt">Jane Brown</span>
+          <span class="details-txt">Patient</span>
+        </div>
+        <div class="right_head">
+          <img src="images/help-img.png" class="help-img">
+          <span>Help</span>
+        </div>
+      </div>
+    </div>   
+  </nav>
+</header>
+
+
+<!-- Side bar of the page -->
+<div class="side-bar">
+  <ul>
+    <li class="text-center">
+      <a href="#">
+        <i class="sidebar_icon fa fa-file-text"></i>
+        <span class="step-proc-text">
+          My Instructions
+        </span>
+      </a>
+    </li>
+
+    <li class="text-center">
+      <a href="#">
+        <i class="sidebar_icon fa fa-stethoscope"></i>
+        <span class="step-proc-text">
+          Care Team
+        </span>
+      </a>
+    </li>
+    
+    <li class="text-center">
+      <a href="#">
+        <i class="sidebar_icon fa fa-hospital-o"></i>
+        <span class="step-proc-text">
+          My Hospital
+        </span>
+      </a>
+    </li>
+  </ul>
+  
+</div>
+
+
+
+<!-- main section of the page -->
+	  <section class="app-wrappper">
+	  	<div class="inner-wrapper">
+			<div class="row">
+				<div class="col-md-12">
+					<h1>Patient List</h1>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-5 col-md-4">
+					<div class="edit-block">
+						<ul>
+							<li><i class="glyphicon glyphicon-pencil"></i></li>
+							<li><i class="glyphicon glyphicon-trash"></i></li>
+							<li>
+							<div class="dropdown">
+								  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown">
+									More
+									<span class="caret"></span>
+								  </button>
+								  <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+									<li><a href="#">Deactivate Patients</a></li>
+									<li role="separator" class="divider"></li>
+									<li><a href="#">Resend Email Invite</a></li>
+								  </ul>
+								</div>
+							
+							
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-sm-7 col-md-6 col-md-offset-2 pull-right">
+					<div class="block-right">
+						<div class="input-group">
+						  <input type="search" class="form-control" placeholder="Username" aria-describedby="basic-addon1">
+						  <span class="input-group-addon" id="basic-addon1"><i class="glyphicon glyphicon-search"></i></span>
+						</div>
+						<input type="button" class="btn btn-success" value="Add patient">
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+					<div class="patient-table">
+						<div class="inner-table">
+							<table class="table table-striped patient-table"> 
+								<thead> 
+									<tr> 
+										<th>
+										<div class="checkbox">
+											<label>
+											  <input type="checkbox">
+												<span class="custom-checkbox"></span>
+											</label>
+										</div>
+
+										</th> 
+										<th>First Name <i></i> </th> 
+										<th>Last Name</th> 
+										<th>Gender</th>
+										<th>DOB</th>
+										<th>Email</th>
+										<th>Language Pref.</th>
+										<th>Phone</th>
+										<th>Procedure Date</th>
+									</tr> 
+								</thead> 
+								<tbody> 
+									<tr> 
+										<td scope="row"><div class="checkbox">
+											<label>
+											  <input type="checkbox">
+												<span class="custom-checkbox"></span>
+											</label>
+										</div>
+										</td> 
+										<td>Noah</td> 
+										<td>Wilson</td> 
+										<td>M</td> 
+										<td>May. 1, 1980</td> 
+										<td>noah.willson@gmail.com</td> 
+										<td>English</td> 
+										<td>(202) 354 7856</td> 
+										<td>Sep. 25, 2015</td> 
+									</tr> 
+									<tr> 
+										<td scope="row"><div class="checkbox">
+											<label>
+											  <input type="checkbox">
+												<span class="custom-checkbox"></span>
+											</label>
+										</div>
+										</td> 
+										<td>Noah</td> 
+										<td>Wilson</td> 
+										<td>M</td> 
+										<td>May. 1, 1980</td> 
+										<td>noah.willson@gmail.com</td> 
+										<td>English</td> 
+										<td>(202) 354 7856</td> 
+										<td>Sep. 25, 2015</td> 
+									</tr> 
+									<tr> 
+										<td scope="row"><div class="checkbox">
+											<label>
+											  <input type="checkbox">
+												<span class="custom-checkbox"></span>
+											</label>
+										</div>
+										</td> 
+										<td>Noah</td> 
+										<td>Wilson</td> 
+										<td>M</td> 
+										<td>May. 1, 1980</td> 
+										<td>noah.willson@gmail.com</td> 
+										<td>English</td> 
+										<td>(202) 354 7856</td> 
+										<td>Sep. 25, 2015</td> 
+									</tr> 
+									<tr> 
+										<td scope="row"><div class="checkbox">
+											<label>
+											  <input type="checkbox">
+												<span class="custom-checkbox"></span>
+											</label>
+										</div>
+										</td> 
+										<td>Noah</td> 
+										<td>Wilson</td> 
+										<td>M</td> 
+										<td>May. 1, 1980</td> 
+										<td>noah.willson@gmail.com</td> 
+										<td>English</td> 
+										<td>(202) 354 7856</td> 
+										<td>Sep. 25, 2015</td> 
+									</tr> 
+									<tr> 
+										<td scope="row"><div class="checkbox">
+											<label>
+											  <input type="checkbox">
+												<span class="custom-checkbox"></span>
+											</label>
+										</div>
+										</td> 
+										<td>Noah</td> 
+										<td>Wilson</td> 
+										<td>M</td> 
+										<td>May. 1, 1980</td> 
+										<td>noah.willson@gmail.com</td> 
+										<td>English</td> 
+										<td>(202) 354 7856</td> 
+										<td>Sep. 25, 2015</td> 
+									</tr> 
+								</tbody> 
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-4 col-sm-4">
+					<p class="result-count">Showing  1  to  10  of  557  entries</p>
+				</div>
+				<div class="col-md-4 col-md-offset-4">
+					<nav>
+					  <ul class="pagination">
+						<li class="disabled">
+						  <span>
+							<span aria-hidden="true">&laquo;</span>
+						  </span>
+						</li>
+						<li class="active">
+						  <span>1 <span class="sr-only">(current)</span></span>
+						</li>
+						<li>
+						  <span>2 <span class="sr-only"></span></span>
+						</li>
+						  <li>
+						  <span>3 <span class="sr-only"></span></span>
+						</li>
+						  <li>
+						  <span>4 <span class="sr-only"></span></span>
+						</li>
+						  <li>
+						  <span>5 <span class="sr-only"></span></span>
+						</li>
+						  <li>
+						  <span>6 <span class="sr-only"></span></span>
+						</li>
+						  <li>
+						  <span>7 <span class="sr-only"></span></span>
+						</li>
+						  <li class="disabled">
+						  <span>
+							<span aria-hidden="true">&gt;</span>
+						  </span>
+						</li>
+					  </ul>
+					</nav>
+				
+				</div>
+			</div>
+		</div>
+	  </section>
+<!--
+<div class="care-team ">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+		  <div class="heading-text">
+			<p class="head-text">My Cardiac Catherization is scheduled for September 25,2015 at Viva Hospital</p>
+			<p class="step-text"><strong>Next step:</strong> Finish watching "Prepare for Work Absence". <a href="#"><strong></strong>Click here to resume</a></p>
+		  </div>
+      </div>
+    </div>
+ 	
+  </div>
+</div>
+-->
+</div>
+ 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/login.js"></script>
+	<script type="text/javascript" src="js/jquery.mCustomScrollbar.js"></script>
+    <script type="text/javascript" src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script type="text/javascript" src="js/jquery-filestyle.min.js"></script>
+    
+	<script>
+		$(document).ready(function(){
+			
+			$("#patientModal").modal("show"); //modal
+			 $("#patientModal .modal-body").mCustomScrollbar({
+			 theme: 'dark'
+			 }); //scrollbar custom
+			$(":file").jfilestyle({buttonText: "Find file"});
+			
+			
+			
+			$('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {    
+				var target = $(this).attr('href');
+
+				$(target).css('left','-'+$(window).width()+'px');   
+				var left = $(target).offset().left;
+				$(target).css({left:left}).animate({"left":"0px"}, "10");
+			});
+			$(".icon").click(function(){
+				$(this).toggleClass("open");
+			});
+		});
+//center-align-modal
+			(function ($) {
+			"use strict";
+			function centerModal() {
+				$(this).css('display', 'block');
+				var $dialog  = $(this).find(".modal-dialog"),
+				offset       = ($(window).height() - $dialog.height()) / 2,
+				bottomMargin = parseInt($dialog.css('marginBottom'), 10);
+
+				// Make sure you don't hide the top part of the modal w/ a negative margin if it's longer than the screen height, and keep the margin equal to the bottom margin of the modal
+				if(offset < bottomMargin) offset = bottomMargin;
+				$dialog.css("margin-top", offset);
+			}
+
+			$(document).on('show.bs.modal', '.modal', centerModal);
+			$(window).on("resize", function () {
+				$('.modal:visible').each(centerModal);
+			});
+		}(jQuery));
+	</script>
+	</body>
+</html>
