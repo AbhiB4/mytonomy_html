@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>MyTonomy- Dashboard</title>   
+ 
+    
+  	<link href='https://fonts.googleapis.com/css?family=Roboto:400,500,300,100,700,900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+	  <link rel="stylesheet" href="css/bootstrap.min.css">
+	  <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+	  <link rel="stylesheet" href="css/jquery-filestyle.min.css">
+	  <link rel="stylesheet" href="css/chosen.min.css">
+	<link href="css/style.css" rel="stylesheet">  
+    <link href="css/media.css" rel="stylesheet">  
+  	
+
+  </head>
+<body >
+  <div class="wrapper">
+<!-- Header of the page -->
+<header>
+  <nav class="navbar navbar-default navbar-fixed-top login-head">  
+    <div class="row">
+      <div class="col-sm-12 col-md-6 text-sm-center text-md-left logo-div">
+        <a href="#" class="logo">
+          <img src="images/h-symbol.png" class="sym-img"><span class="viva-text">VIVA HOSPITAL</span>
+        </a>
+      </div>
+      <div class="col-sm-12 col-md-6 text-right">
+        
+        <div class="left_head">
+          <div class="dropdown">
+              <div class=" dropdown-toggle" type="button" data-toggle="dropdown">
+                <span class="caret"></span>
+              </div>
+            <ul class="dropdown-menu pull-right">
+              <li><a href="#">Action</a></li>
+              <li><a href="#">Another action</a></li>
+              <li><a href="#">Something else here</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="#">Separated link</a></li>
+            </ul>
+          </div>
+          
+          <img src="images/usr-img.jpg" class="usr-img">
+          <span class="procedure-txt">Jane Brown</span>
+          <span class="details-txt">Patient</span>
+        </div>
+        <div class="right_head">
+          <img src="images/help-img.png" class="help-img">
+          <span>Help</span>
+        </div>
+      </div>
+    </div>   
+  </nav>
+</header>
+
+
+<!-- Side bar of the page -->
+<div class="side-bar">
+  <ul>
+    <li class="text-center">
+      <a href="#">
+        <i class="sidebar_icon fa fa-file-text"></i>
+        <span class="step-proc-text">
+          My Instructions
+        </span>
+      </a>
+    </li>
+
+    <li class="text-center">
+      <a href="#">
+        <i class="sidebar_icon fa fa-stethoscope"></i>
+        <span class="step-proc-text">
+          Care Team
+        </span>
+      </a>
+    </li>
+    
+    <li class="text-center">
+      <a href="#">
+        <i class="sidebar_icon fa fa-hospital-o"></i>
+        <span class="step-proc-text">
+          My Hospital
+        </span>
+      </a>
+    </li>
+  </ul>
+  
+</div>
+
+
+
+<!-- main section of the page -->
+	  <section class="app-wrappper full-wrapper">
+	  	<div class="inner-wrapper">
+			<div class="row">
+				<div class="col-md-12">
+					<h1>Add Patient</h1>
+				</div>
+			</div>
+
+			<form class="form-horizontal patient-form">
+				<fieldset>
+					<h3>Personal Details</h3>
+					<div class="form-group">
+						<label for="" class="col-sm-12 col-md-4 col-lg-4 control-label text-sm-left">Name</label>
+						<div class="col-sm-12 col-md-4 col-lg-4">
+                            <input type="text" class="form-control"  placeholder="First Name"></div>
+                        <div class="col-sm-12 col-md-4 col-lg-4">
+							<input type="text" class="form-control"  placeholder="Last Name">
+						</div>
+					</div>
+					<div class="form-group">
+						<label for="" class="col-sm-12 col-md-4 col-lg-4 control-label text-sm-left">Gender</label>
+						<div class="col-sm-12 col-md-6 col-lg-6">
+						  <label class="radio-inline">
+							  <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> Male
+							</label>
+							<label class="radio-inline">
+							  <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> Female
+							</label>
+						</div>
+					</div>
+					<div class="form-group">
+						<label for="" class="col-sm-12 col-md-4 col-lg-4 control-label text-sm-left">Date of Birth</label>
+						<div class="col-sm-6 col-md-6  dob">
+						  <select class="form-control chosen-select">
+							<option>Month</option>	
+							<option>2</option>	
+							<option>3</option>	
+						  </select>
+							<select class="form-control chosen-select mid">
+							<option>Date</option>	
+							<option>2</option>	
+							<option>3</option>	
+						  </select>
+							<select class="form-control chosen-select">
+							<option>Year</option>	
+							<option>2</option>	
+							<option>3</option>	
+						  </select>
+
+						</div>
+					</div>
+					<div class="form-group">
+						<label for="" class="col-sm-12 col-md-4 col-lg-4 control-label text-sm-left">Language Preferances</label>
+						<div class="col-sm-12 col-md-6 full-wid">
+							<select class="form-control chosen-select">
+							<option>Language Preferances</option>	
+							<option>2</option>	
+							<option>3</option>	
+						  </select>
+						</div>
+					</div>
+					<div class="form-group">
+						<label for="" class="col-sm-12 col-md-4 col-lg-4 control-label text-sm-left">Medical Record</label>
+						<div class="col-sm-12 col-md-6 ">
+						  <input type="password" class="form-control" id="inputPassword3" placeholder="Medical Record">
+						</div>
+					</div>
+				</fieldset>
+				<fieldset>
+					<h3>Contact Details</h3>
+					<div class="form-group">
+						<label for="" class="col-sm-12 col-md-4 col-lg-4 control-label text-sm-left">Email Address</label>
+						<div class="col-sm-12 col-md-6 ">
+						  <input type="email" class="form-control" id="inputEmail3" placeholder="abc@exaple.com">
+						</div>
+					</div>
+					<div class="form-group">
+						<label for="" class="col-sm-12 col-md-4 col-lg-4 control-label text-sm-left">Password</label>
+						<div class="col-sm-12 col-md-6">
+						  <input type="password" class="form-control" id="inputPassword3">
+						</div>
+					</div>
+					<div class="form-group">
+						<label for="" class="col-sm-12 col-md-4 col-lg-4 control-label text-sm-left">Phone</label>
+						<div class="col-sm-12 col-md-6 ">
+						  <div class="input-group">
+							  <span class="input-group-addon" id="basic-addon3">+1</span>
+							  <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+						  </div>
+						</div>
+					</div>
+				</fieldset>
+				<fieldset>
+					<h3>Personal Details</h3>
+					<div class="form-group">
+						<label for="" class="col-sm-12 col-md-4 col-lg-4 control-label text-sm-left">Procedure Name</label>
+						<div class="col-sm-12 col-md-6  full-wid">
+							<select class="form-control chosen-select">
+								<option>Select Procedure</option>	
+								<option>2</option>	
+								<option>3</option>	
+							  </select>
+						</div>
+					</div>
+					<div class="form-group">
+						<label for="" class="col-sm-12 col-md-4 col-lg-4 control-label text-sm-left">Date of Birth</label>
+						<div class="col-sm-12 col-md-8 col-lg-8  dob">
+						  <select class="form-control chosen-select">
+							<option>Month</option>	
+							<option>2</option>	
+							<option>3</option>	
+						  </select>
+							<select class="form-control chosen-select mid">
+							<option>Date</option>	
+							<option>2</option>	
+							<option>3</option>	
+						  </select>
+							<select class="form-control chosen-select">
+							<option>Year</option>	
+							<option>2</option>	
+							<option>3</option>	
+						  </select>
+
+						</div>
+					</div>
+					<div class="form-group">
+						<label for="" class="col-sm-12 col-md-4 col-lg-4 control-label text-sm-left">Time of Procedure</label>
+						<div class="col-sm-12 col-md-6 ">
+						  <div class="input-group">
+							  <div class="input-group bootstrap-timepicker timepicker">
+									<input id="timepicker" class="form-control input-small" type="text"><span class="input-group-addon"><i class="glyphicon glyphicon-time"></i></span>
+								</div>
+						  </div>
+						</div>
+					</div>
+					<div class="form-group">
+                        <div class="col-sm-8 col-md-5 ">    
+							<button type="submit" class="btn btn-primary">Save</button>
+						</div>
+                        <div class="col-sm-8 col-md-5 ">
+                          <button type="submit" class="btn btn-default">Cancel</button>
+                        </div>
+					</div>
+					
+				</fieldset>
+			</form>
+					
+				
+		</div>
+	  </section>
+<!--
+<div class="care-team ">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+		  <div class="heading-text">
+			<p class="head-text">My Cardiac Catherization is scheduled for September 25,2015 at Viva Hospital</p>
+			<p class="step-text"><strong>Next step:</strong> Finish watching "Prepare for Work Absence". <a href="#"><strong></strong>Click here to resume</a></p>
+		  </div>
+      </div>
+    </div>
+ 	
+  </div>
+</div>
+-->
+</div>
+ 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/login.js"></script>
+	<script type="text/javascript" src="js/jquery.mCustomScrollbar.js"></script>
+    <script type="text/javascript" src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script type="text/javascript" src="js/chosen.jquery.min.js"></script>
+    <script type="text/javascript" src="js/chosen.proto.min.js"></script>
+    <script type="text/javascript" src="js/jquery-filestyle.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap-timepicker.js"></script>
+    
+	<script>
+		$(document).ready(function(){
+			
+			$("#patientModal").modal("show"); //modal
+			 $("#patientModal .modal-body").mCustomScrollbar({
+			 theme: 'dark'
+			 }); //scrollbar custom
+			$(":file").jfilestyle({buttonText: "Find file"});
+			
+			
+			
+			
+			$('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {    
+				var target = $(this).attr('href');
+
+				$(target).css('left','-'+$(window).width()+'px');   
+				var left = $(target).offset().left;
+				$(target).css({left:left}).animate({"left":"0px"}, "10");
+			});
+			$(".icon").click(function(){
+				$(this).toggleClass("open");
+			});
+		});
+//center-align-modal
+			(function ($) {
+			"use strict";
+			function centerModal() {
+				$(this).css('display', 'block');
+				var $dialog  = $(this).find(".modal-dialog"),
+				offset       = ($(window).height() - $dialog.height()) / 2,
+				bottomMargin = parseInt($dialog.css('marginBottom'), 10);
+
+				// Make sure you don't hide the top part of the modal w/ a negative margin if it's longer than the screen height, and keep the margin equal to the bottom margin of the modal
+				if(offset < bottomMargin) offset = bottomMargin;
+				$dialog.css("margin-top", offset);
+			}
+
+			$(document).on('show.bs.modal', '.modal', centerModal);
+			$(window).on("resize", function () {
+				$('.modal:visible').each(centerModal);
+			});
+		}(jQuery));
+
+//==============================
+$(".chosen-select").chosen();
+$('#timepicker').timepicker({
+	showSeconds: true,
+
+});
+
+	</script>
+	</body>
+</html>

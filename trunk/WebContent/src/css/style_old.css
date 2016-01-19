@@ -1,0 +1,527 @@
+@import "../css/bootstrap.min.css";
+@import "../css/font-awesome.min.css";
+body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  height: 100%;
+}
+html {
+  height: 100%;
+  width: 100%;
+}
+.side-bar {
+  width: 120px;
+  height: 100%;
+  left: 0;
+  position: fixed;
+  background: #23212E;
+  top: 0;
+  z-index: 2;
+  padding-top: 70px;
+}
+.side-bar span {
+  font-size: 15px;
+  font-family: Roboto;
+  font-weight: 400;
+  color: #949498;
+}
+.side-bar ul {
+  position: relative;
+  text-align: center;
+  padding: 0;
+  list-style: none;
+}
+.side-bar li {
+  border-bottom: 1px solid;
+  border-bottom-color: #393843;
+  padding: 10px 0;
+  display: block;
+}
+.side-bar li a {
+  width: 100%;
+  text-align: center;
+  text-decoration: none;
+}
+.side-bar li:hover {
+  cursor: pointer;
+}
+.side-bar li:hover a {
+  color: #23527c;
+}
+.footer {
+  background: rgba(0,0,0,0.9);
+  padding: 15px 0;
+  text-align: center;
+}
+.footer .copyright {
+  margin: auto;
+  color: rgba(255,255,255,0.5);
+  font-size: 12px;
+}
+header {
+  margin-bottom: 0;
+  background: #fff;
+  z-index: 1;
+}
+header .procedure-txt,
+header .details-txt {
+  margin-right: 24px;
+}
+header .details-txt {
+  margin-right: 0px;
+  white-space: normal;
+  color: #D4D4D4;
+}
+header .usr-img {
+  border-radius: 100%;
+}
+header .procedure-txt {
+  font-size: 18px;
+  font-family: Roboto;
+  font-weight: 400;
+}
+header .inner-text {
+  color: #0091D5;
+  font-size: 16px;
+  font-family: Roboto;
+  font-weight: 400;
+}
+header .viva-text {
+  font-size: 22px;
+  font-family: Roboto;
+  font-weight: 400;
+  color: #A6A6A6;
+  vertical-align: middle;
+  margin-left: 1%;
+  margin-top: 12px;
+}
+header .login-head {
+  background: #fff;
+  height: 70px;
+}
+header .help-img {
+  display: block;
+}
+.wrapper {
+  min-height: 100%;
+  float: left;
+  width: 100%;
+  position: relative;
+}
+.loginbackground {
+  position: relative;
+  background: url("../images/Login_BG.png") top center no-repeat;
+  background-size: cover;
+}
+.loginbackground hr {
+  opacity: 0.3;
+}
+.loginbackground ::-moz-placeholder {
+  font-size: 15px;
+  color: #1B1B1B;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+}
+.loginbackground ::-webkit-input-placeholder {
+  font-size: 15px;
+  color: #1B1B1B;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+}
+.loginbackground .login-div {
+  height: 411px;
+  width: 80%;
+  margin-top: 26%;
+  margin-left: -10%;
+  margin-top: 30%;
+  background: rgba(14,20,51,0.5);
+  padding: 10px 22px;
+}
+.loginbackground .login-text {
+  color: #F7F7F8;
+  text-align: center;
+  line-height: 4px;
+  font-size: 18px;
+  margin-bottom: 10px;
+  font-weight: 300;
+}
+.loginbackground h2 {
+  color: #F7F7F8;
+  margin-top: 58%;
+  font-size: 42px;
+  font-weight: 400;
+}
+.loginbackground .viva-text {
+  font-size: 24px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  margin: auto;
+  text-align: centre;
+  color: #F7F7F8;
+  vertical-align: middle;
+  margin: 26px auto;
+  margin-left: 1%;
+}
+.loginbackground .text-bottom {
+  height: 47px;
+  min-width: 47px;
+  width: 513px;
+  text-align: centre;
+  margin-top: -20px;
+}
+.loginbackground .inner-text {
+  color: #0091D5;
+  text-align: center;
+  font-size: 17px;
+}
+.loginbackground .head-gap {
+  height: 60px;
+}
+.loginbackground .txt-bottom {
+  color: #F7F7F8;
+  font-size: 20px;
+  font-weight: 400;
+}
+.loginbackground .btn-block {
+  height: 40px;
+  color: #0091D5;
+  vertical-align: middle;
+  line-height: 0em;
+}
+.loginbackground .assesmnt-text {
+  font-size: 18px;
+  font-weight: 300;
+  margin-left: 15%;
+}
+.loginbackground .login-head-text {
+  height: 20px;
+}
+.loginbackground .help-text {
+  color: #F7F7F8;
+  font-size: 17px;
+  font-weight: 300;
+  margin-left: 5%;
+}
+.loginbackground .input-text {
+  color: #F7F7F8;
+  text-align: center;
+  line-height: 7px;
+  font-size: 14px;
+  margin-bottom: 15px;
+  font-weight: 300;
+}
+.loginbackground .login-head {
+  height: 83px;
+  text-align: center;
+  width: 100%;
+  background: rgba(0,0,0,0.3);
+  border-bottom: 1px solid;
+  border-bottom-color: white;
+}
+.loginbackground .login-head .head-text {
+  min-height: 20px;
+  color: white;
+  vertical-align: middle;
+  line-height: 32px;
+  margin-top: 24px;
+  margin-bottom: 24px;
+  padding-top: 24px;
+}
+.loginbackground .navbar .navbar-default .navbar-fixed-top {
+  position: fixed;
+  opacity: 0.65;
+}
+.welcome-background {
+  background-size: cover;
+  background: black;
+}
+.welcome-background .welcome-head {
+  height: 83px;
+  text-align: center;
+  width: 100%;
+  background: #000000;
+  border-bottom: 1px solid;
+  border-bottom-color: #828285;
+}
+.welcome-background .viva-text {
+  font-size: 24px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  margin: auto;
+  text-align: centre;
+  color: #F7F7F8;
+  vertical-align: middle;
+  margin: 26px auto;
+  margin-left: 8px;
+}
+.welcome-background .welcm-img-section {
+  margin-top: 10%;
+}
+.welcome-background .welcm-img-section .txt-bottom {
+  margin-top: 5%;
+}
+.welcome-background .welcm-img {
+  margin-right: 10%;
+  width: 100%;
+  height: 380px;
+}
+.welcome-background .txt-bottom {
+  color: #FFFFFF;
+  font-size: 20px;
+  font-weight: 400;
+}
+.welcome-background .txt-bottom .frst-txt {
+  margin-bottom: 5%;
+}
+.welcome-background h2 {
+  color: #ffffff;
+  margin-top: 24%;
+  font-size: 44px;
+  font-weight: 300;
+  margin-bottom: 4%;
+}
+.welcome-background .login-text {
+  color: #ffffff;
+  text-align: center;
+  line-height: 7px;
+  font-size: 18px;
+  margin-bottom: 15px;
+  font-weight: 300;
+}
+.welcome-background .login-text a {
+  text-decoration: underline;
+  color: #F7F7F8;
+}
+.welcome-background .btn-lg {
+  width: 38%;
+}
+.welcome-background .btn-lg .login-text {
+  font-size: 24px;
+}
+.welcome-background .details-text .txt-bottom {
+  width: calc(80%);
+}
+.welcome-background .details-text .frst-txt {
+  width: 100%;
+  margin-bottom: 5%;
+}
+.welcome-background .modal-header {
+  background-color: #EBEBEB;
+}
+.welcome-background .modal-footer {
+  background-color: #EBEBEB;
+  text-align: center;
+}
+.welcome-background .modal-content {
+  border-radius: 6px;
+}
+.welcome-background .modal-content h4 {
+  font-size: 30px;
+  font-family: 'Roboto', sans-serif;
+}
+.welcome-background .modal-dialog {
+  width: 70%;
+  overflow-y: initial !important;
+}
+.welcome-background .terms-text {
+  font-size: 18px;
+  font-family: Roboto;
+  font-weight: 300;
+  font-color: #2f373c;
+}
+.welcome-background h5 {
+  font-size: 14px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+}
+.welcome-background .terms-head {
+  font-size: 22px;
+  font-family: Roboto;
+  font-weight: 400;
+  font-color: #182127;
+}
+.welcome-background .modal-body {
+  height: 400px;
+  overflow-y: auto;
+}
+.welcome-background .btn-decline {
+  background: #A7B2BF;
+  border: 2px solid;
+  border-color: #A7B2BF;
+}
+.care-team {
+  padding-left: 118px;
+  background-color: #EFEEF3;
+}
+.care-team .container {
+  margin-right: 0;
+  margin-top: 0;
+  padding-top: 70px;
+  width: 100%;
+}
+.care-team .procedure-txt {
+  font-size: 18px;
+  font-family: Roboto;
+  font-weight: 400;
+}
+.care-team .nurse-details {
+  background-color: #FFFFFF;
+}
+.care-team .details-txt {
+  font-size: 14px;
+  font-family: Roboto;
+  font-weight: 300;
+  font-color: #2f373c;
+}
+.care-team .img-responsive {
+  width: 100%;
+}
+.care-team .head-txt {
+  font-size: 24px;
+  font-family: Roboto;
+  font-weight: 400;
+  float: left;
+  padding: 15px;
+}
+.care-team .nurse-div {
+  margin-top: 34px;
+}
+.care-team .inner-text {
+  color: #0091D5;
+  font-size: 16px;
+  font-family: Roboto;
+  font-weight: 400;
+}
+.care-team .name-text {
+  margin-top: -8%;
+  position: absolute;
+  color: #0091D5;
+  font-size: 20px;
+  font-family: Roboto;
+  font-weight: 400;
+  margin-left: 3%;
+}
+.care-team .name-doc-text {
+  margin-top: -11%;
+  position: absolute;
+  color: #0091D5;
+  font-size: 20px;
+  font-family: Roboto;
+  font-weight: 400;
+  margin-left: 3%;
+}
+.care-team .login-head {
+  background: white;
+}
+.care-team .viva-text {
+  font-size: 22px;
+  font-family: Roboto;
+  font-weight: 400;
+  color: #A6A6A6;
+  vertical-align: middle;
+  margin-left: 1%;
+  margin-top: 7px;
+}
+.dashboard-page .head-text {
+  color: #456B9A;
+  font-size: 20px;
+  font-family: Roboto;
+  font-weight: 400;
+}
+.dashboard-page .heading-text {
+  padding-top: 12%;
+}
+.dashboard-page .video-notify-text {
+  color: #0091D5;
+  font-size: 18px;
+  font-family: Roboto;
+  font-weight: 400;
+}
+.dashboard-page .step-proc-text {
+  font-size: 18px;
+  font-family: Roboto;
+  font-weight: 400;
+}
+.dashboard-page .nav>li>active a {
+  background: url("../images/activeTab-img.jpg") top right no-repeat;
+  background-size: cover;
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.dashboard-page .nav > li a {
+  background: url("../images/inactive-tab.jpg") top right no-repeat;
+  background-size: cover;
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.dashboard-page .outer-container {
+  background-color: #f2f4f7;
+  margin-right: 0%;
+  margin-top: -3%;
+  width: calc(13500/144);
+}
+.dashboard-page .tab-content {
+  background-color: #FFFFFF;
+}
+.dashboard-page .nav-tabs>li {
+  width: 20%;
+}
+.dashboard-page ul.nav li {
+  display: inline-block;
+}
+.dashboard-page ul.nav li span {
+  color: #FFFFFF;
+}
+.dashboard-page .tab-pane {
+  padding-top: 5%;
+}
+.dashboard-page .glyphicon-plus {
+  background: green top center no-repeat;
+  background-size: cover;
+  border-radius: 100%;
+}
+.dashboard-page .glyphicon-minus {
+  background: blue top center no-repeat;
+  background-size: cover;
+  border-radius: 100%;
+}
+.left_head,
+.right_head {
+  float: right;
+}
+.left_head {
+  padding: 8px 0;
+}
+.left_head .dropdown {
+  float: right;
+}
+.left_head .dropdown .dropdown-menu {
+  right: 15px;
+}
+.left_head .dropdown .dropdown-toggle {
+  padding: 15px 20px;
+}
+.right_head {
+  padding: 11px 20px;
+  text-align: center;
+  border-right: solid 1px #ddd;
+}
+.sidebar_icon {
+  display: block;
+  font-size: 24px;
+  margin: 10px 0;
+  text-align: center;
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+.logo {
+  padding: 15px;
+  display: block;
+}

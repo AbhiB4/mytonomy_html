@@ -1,0 +1,1570 @@
+@import "../css/font-awesome.min.css";
+/*!
+ * Timepicker Component for Twitter Bootstrap
+ *
+ * Copyright 2013 Joris de Wit
+ *
+ * Contributors https://github.com/jdewit/bootstrap-timepicker/graphs/contributors
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+.bootstrap-timepicker {
+  position: relative;
+}
+.bootstrap-timepicker.pull-right .bootstrap-timepicker-widget.dropdown-menu {
+  left: auto;
+  right: 0;
+}
+.bootstrap-timepicker.pull-right .bootstrap-timepicker-widget.dropdown-menu:before {
+  left: auto;
+  right: 12px;
+}
+.bootstrap-timepicker.pull-right .bootstrap-timepicker-widget.dropdown-menu:after {
+  left: auto;
+  right: 13px;
+}
+.bootstrap-timepicker .input-group-addon {
+  cursor: pointer;
+}
+.bootstrap-timepicker .input-group-addon i {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+}
+.bootstrap-timepicker-widget.dropdown-menu {
+  padding: 4px;
+}
+.bootstrap-timepicker-widget.dropdown-menu.open {
+  display: inline-block;
+}
+.bootstrap-timepicker-widget.dropdown-menu:before {
+  border-bottom: 7px solid rgba(0, 0, 0, 0.2);
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+  content: "";
+  display: inline-block;
+  position: absolute;
+}
+.bootstrap-timepicker-widget.dropdown-menu:after {
+  border-bottom: 6px solid #FFFFFF;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  content: "";
+  display: inline-block;
+  position: absolute;
+}
+.bootstrap-timepicker-widget.timepicker-orient-left:before {
+  left: 6px;
+}
+.bootstrap-timepicker-widget.timepicker-orient-left:after {
+  left: 7px;
+}
+.bootstrap-timepicker-widget.timepicker-orient-right:before {
+  right: 6px;
+}
+.bootstrap-timepicker-widget.timepicker-orient-right:after {
+  right: 7px;
+}
+.bootstrap-timepicker-widget.timepicker-orient-top:before {
+  top: -7px;
+}
+.bootstrap-timepicker-widget.timepicker-orient-top:after {
+  top: -6px;
+}
+.bootstrap-timepicker-widget.timepicker-orient-bottom:before {
+  bottom: -7px;
+  border-bottom: 0;
+  border-top: 7px solid #999;
+}
+.bootstrap-timepicker-widget.timepicker-orient-bottom:after {
+  bottom: -6px;
+  border-bottom: 0;
+  border-top: 6px solid #ffffff;
+}
+.bootstrap-timepicker-widget a.btn,
+.bootstrap-timepicker-widget input {
+  border-radius: 4px;
+}
+.bootstrap-timepicker-widget table {
+  width: 100%;
+  margin: 0;
+}
+.bootstrap-timepicker-widget table td {
+  text-align: center;
+  height: 30px;
+  margin: 0;
+  padding: 2px;
+}
+.bootstrap-timepicker-widget table td:not(.separator) {
+  min-width: 30px;
+}
+.bootstrap-timepicker-widget table td span {
+  width: 100%;
+}
+.bootstrap-timepicker-widget table td a {
+  border: 1px transparent solid;
+  width: 100%;
+  display: inline-block;
+  margin: 0;
+  padding: 8px 0;
+  outline: 0;
+  color: #333;
+}
+.bootstrap-timepicker-widget table td a:hover {
+  text-decoration: none;
+  background-color: #eee;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  border-color: #ddd;
+}
+.bootstrap-timepicker-widget table td a i {
+  margin-top: 2px;
+  font-size: 18px;
+}
+.bootstrap-timepicker-widget table td input {
+  width: 25px;
+  margin: 0;
+  text-align: center;
+}
+.bootstrap-timepicker-widget .modal-content {
+  padding: 4px;
+}
+@media (min-width: 767px) {
+  .bootstrap-timepicker-widget.modal {
+    width: 200px;
+    margin-left: -100px;
+  }
+}
+@media (max-width: 767px) {
+  .bootstrap-timepicker {
+    width: 100%;
+  }
+  .bootstrap-timepicker .dropdown-menu {
+    width: 100%;
+  }
+}
+body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  height: 100%;
+}
+html {
+  height: 100%;
+  width: 100%;
+}
+.wrapper {
+  height: 100%;
+  float: left;
+  width: 100%;
+  transition: all 0.9s;
+}
+.head {
+  background-color: rgba(73, 89, 116, 0.4);
+  float: left;
+  width: 100%;
+  text-align: center;
+  padding: 20px 0px;
+  border-bottom: 1px solid #cdd1d8;
+  height: 81px;
+}
+.side-bar {
+  width: 120px;
+  height: 100%;
+  left: 0;
+  position: fixed;
+  background: #23212E;
+  top: 0;
+  z-index: 2;
+  padding-top: 70px;
+}
+.side-bar span {
+  font-size: 15px;
+  font-family: Roboto;
+  font-weight: 400;
+}
+.side-bar ul {
+  position: relative;
+  text-align: center;
+  padding: 0;
+  list-style: none;
+}
+.side-bar li {
+  border-bottom: 1px solid;
+  border-bottom-color: #393843;
+  padding: 10px 0;
+  display: block;
+}
+.side-bar li a {
+  width: 100%;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+}
+.side-bar li:hover {
+  cursor: pointer;
+}
+.side-bar li:hover a {
+  color: #efefef;
+}
+.wrapper {
+  min-height: 100%;
+  float: left;
+  width: 100%;
+  position: relative;
+  transition: all 0.9s;
+}
+/* begin of login page */
+.loginbackground {
+  position: relative;
+  background: url("../images/Login_BG.png") top center no-repeat;
+  background-size: cover;
+  float: left;
+  width: 100%;
+  height: 100%;
+}
+.loginbackground .container {
+  height: 100%;
+}
+.loginbackground ::-moz-placeholder {
+  font-size: 15px;
+  color: #1B1B1B;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+}
+.loginbackground ::-webkit-input-placeholder {
+  font-size: 15px;
+  color: #1B1B1B;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+}
+.content {
+  height: calc(100% - 80px);
+}
+.welcome-text {
+  float: left;
+  width: calc(100% - 360px);
+  margin-top: 350px;
+  position: absolute;
+  bottom: 10%;
+}
+.loginbackground h2 {
+  color: #F7F7F8;
+  margin-top: 0;
+  font-size: 42px;
+  font-weight: 400;
+}
+.loginbackground .txt-bottom {
+  color: #F7F7F8;
+  font-size: 20px;
+  font-weight: 400;
+}
+.welcome-wrapper {
+  position: relative;
+  float: left;
+  width: 100%;
+  height: 100%;
+}
+.login-div {
+  height: 470px;
+  max-width: 360px;
+  float: right;
+  background: rgba(14, 20, 51, 0.5);
+  padding: 30px 22px;
+  width: 360px;
+  position: absolute;
+  bottom: 10%;
+  right: 0px;
+}
+.login-div .form-group {
+  margin-bottom: 25px;
+}
+.login-div .form-group label {
+  color: #F7F7F8;
+  text-align: center;
+  line-height: 7px;
+  font-size: 12px;
+  margin-bottom: 10px;
+  font-weight: 300;
+}
+.login-div .form-group.checkbox {
+  margin: 0px;
+  padding: 0px;
+}
+.login-div .form-group.checkbox label {
+  padding-left: 0px;
+}
+.login-div .form-group .custom-checkbox {
+  width: 17px;
+  height: 17px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  display: block;
+  line-height: 15px;
+  font-weight: bold;
+  color: #0091d5;
+  float: left;
+}
+.login-div .form-group input[type="checkbox"] {
+  visibility: hidden;
+}
+.login-div .form-group input[type="checkbox"]:checked ~ .custom-checkbox:before {
+  content: "\2713";
+}
+.login-div .form-group .checkbox-label {
+  font-size: 14px;
+  display: inline-block;
+  position: relative;
+  left: 7px;
+  float: left;
+  line-height: initial;
+  text-align: left;
+  color: #fff;
+}
+.login-div .form-group .checkbox-label a {
+  color: #50b5e4;
+  font-weight: 500;
+}
+.login-div .form-group input[type="submit"] {
+  padding: 10px 0px;
+  font-size: 18px;
+  background-color: #0091d5;
+}
+.login-div .assesment-text p {
+  font-size: 16px;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0px 15px;
+  border-bottom: 1px solid #ccc;
+  font-weight: 300;
+}
+.login-div .assesment-text p a {
+  color: #50b5e4;
+  font-weight: 500;
+}
+.login-div .assesment-text p:last-child {
+  border-bottom: 0px;
+}
+.login-div .assesment-text p strong {
+  font-weight: 500;
+}
+/* end of login page */
+/*==================================dashboard==============================*/
+.timeline-block {
+  background-color: #fff;
+  float: left;
+  width: 100%;
+}
+.timeline-block #accordion {
+  float: left;
+  width: 100%;
+  padding-top: 45px;
+}
+.timeline-block #accordion .panel-title {
+  font-size: 20px;
+  color: #24292f;
+  font-weight: 400;
+}
+.timeline-block #accordion .panel-title .icon {
+  background: url("../images/Expand_Collaps.png") no-repeat bottom left;
+  width: 25px;
+  height: 24px;
+  margin-right: 15px;
+  float: left;
+}
+.timeline-block #accordion .panel-title .collapsed .icon {
+  background-position: top left;
+}
+.timeline-block #accordion .panel-title a {
+  text-decoration: none;
+}
+.timeline-block #accordion .panel-title .n_vid {
+  font-size: 14px;
+  color: #8f9aa6;
+  padding-left: 20px;
+}
+.timeline-block #accordion .panel-title .comp {
+  font-size: 14px;
+  font-weight: 500;
+  color: #28c05d;
+  padding-left: 20px;
+}
+.timeline-block #accordion .panel-body {
+  padding-left: 60px;
+  border: 0px;
+}
+.timeline-block #accordion .panel-body .block {
+  float: left;
+  width: 20%;
+  margin-bottom: 20px;
+}
+.timeline-block #accordion .panel-body .block .inner-block {
+  position: relative;
+}
+.timeline-block #accordion .panel-body .block .inner-block img {
+  width: 85%;
+}
+.timeline-block #accordion .panel-body .block .inner-block .completion {
+  background: rgba(124, 194, 72, 0.8);
+  color: #fff;
+  padding: 5px;
+  position: absolute;
+  right: 15%;
+}
+.timeline-block #accordion .panel-body .block .inner-block .duration {
+  background-color: #111;
+  border: 1px solid #fff;
+  border-radius: 2px;
+  bottom: 2px;
+  color: #fff;
+  margin: 0;
+  padding: 2px 5px;
+  position: absolute;
+  right: 16%;
+}
+.timeline-block #accordion .panel-body .block .progress-bar {
+  float: left;
+  width: 85%;
+  height: 5px;
+  background: #7ac943;
+}
+.timeline-block #accordion .panel-body .block p {
+  padding-right: 15%;
+  padding-top: 15px;
+}
+.timeline {
+  padding-left: 0px;
+}
+.timeline li {
+  list-style: none;
+  float: left;
+  width: 20%;
+  font-size: 20px;
+  text-align: center;
+  background-color: #d7dde5;
+  height: 68px;
+  position: relative;
+}
+.timeline li:after {
+  content: "";
+  width: 20px;
+  float: right;
+  height: 68px;
+  position: absolute;
+  right: -20px;
+  background: url("../images/Tracker_Front_Grey.png") no-repeat;
+  z-index: 1;
+}
+.timeline li a {
+  color: #616a74;
+  display: inline-block;
+  text-align: left;
+  padding-top: 8px;
+  text-decoration: none;
+  outline: none;
+}
+.timeline li a span {
+  display: block;
+  font-size: 14px;
+}
+.timeline li.active {
+  background-color: #0091d5;
+  transition: background-color 1s;
+  -webkit-transition: background-color 1s;
+  -moz-transition: background-color 1s;
+}
+.timeline li.active a {
+  color: #fff;
+}
+.timeline li.active:after {
+  content: "";
+  width: 20px;
+  float: right;
+  height: 68px;
+  position: absolute;
+  right: -20px;
+  background: url("../images/Tracker_Front_Blue.png") no-repeat;
+  z-index: 1;
+  transition: background 1s;
+  -webkit-transition: background 1s;
+  -moz-transition: background 1s;
+}
+.timeline li.active:before {
+  content: "";
+  border-top: 10px solid #0091d5;
+  border-bottom: 10px solid transparent;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top-color: #0091d5;
+  width: 10px;
+  height: 10px;
+  float: left;
+  position: absolute;
+  bottom: -20px;
+  left: 0px;
+  right: 0px;
+  margin: auto;
+  transition: border-top-color 1s;
+  -webkit-transition: border-top-color 1s;
+  -moz-transition: border-top-color 1s;
+}
+.timeline li:last-child:after {
+  content: none;
+}
+/*footer{
+  position: absolute;
+  bottom: 0;
+}*/
+footer {
+  background: rgba(0, 0, 0, 0.9) none repeat scroll 0 0;
+  bottom: 0;
+  padding: 15px 0 15px 118px;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  width: 100%;
+}
+footer .copyright {
+  margin: auto;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 12px;
+}
+.welcome-background + footer {
+  position: relative;
+  padding: 15px 0px;
+}
+.welcome-background .container {
+  width: 95%;
+}
+/*Header */
+header {
+  margin-bottom: 0;
+  background: #fff;
+  z-index: 1;
+}
+header .procedure-txt,
+header .details-txt {
+  margin-right: 24px;
+}
+header .details-txt {
+  margin-right: 0px;
+  white-space: normal;
+  color: #666;
+}
+header .usr-img {
+  border-radius: 100%;
+  width: 80px;
+}
+header .procedure-txt {
+  font-size: 18px;
+  font-family: Roboto;
+  font-weight: 400;
+}
+header .inner-text {
+  color: #0091D5;
+  font-size: 16px;
+  font-family: Roboto;
+  font-weight: 400;
+}
+header .viva-text {
+  font-size: 22px;
+  font-family: Roboto;
+  font-weight: 400;
+  color: #A6A6A6;
+  vertical-align: middle;
+  margin-left: 1%;
+  margin-top: 12px;
+  word-break: normal;
+}
+header .login-head {
+  background: #fff;
+  min-height: 70px;
+}
+header .help-img {
+  display: block;
+}
+/*START OF WELCOME PAGE*/
+.welcome-background {
+  background-size: cover;
+  background: black;
+  height: 100%;
+}
+.welcome-background .welcome-head {
+  height: 83px;
+  text-align: center;
+  width: 100%;
+  background: #000000;
+  border-bottom: 1px solid;
+  border-bottom-color: #828285;
+}
+.welcome-background .viva-text {
+  font-size: 24px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  margin: auto;
+  text-align: centre;
+  color: #F7F7F8;
+  vertical-align: middle;
+  margin: 26px auto;
+  margin-left: 8px;
+}
+.welcome-background .welcm-img-section {
+  margin-top: 10%;
+}
+.welcome-background .welcm-img-section .txt-bottom {
+  margin-top: 5%;
+}
+.welcome-background .welcm-img {
+  width: 100%;
+  height: auto;
+}
+.welcome-background .txt-bottom {
+  color: #FFFFFF;
+  font-size: 20px;
+  font-weight: 400;
+}
+.welcome-background .txt-bottom .frst-txt {
+  margin-bottom: 5%;
+}
+.welcome-background h2 {
+  color: #ffffff;
+  margin-top: 24%;
+  font-size: 44px;
+  font-weight: 300;
+  margin-bottom: 4%;
+}
+.welcome-background .login-text {
+  color: #ffffff;
+  text-align: center;
+  line-height: 7px;
+  font-size: 18px;
+  margin-bottom: 15px;
+  font-weight: 300;
+}
+.welcome-background .login-text a {
+  text-decoration: underline;
+  color: #F7F7F8;
+}
+.welcome-background .btn-lg {
+  width: 38%;
+  margin-top: 40px;
+}
+.welcome-background .btn-lg .login-text {
+  font-size: 24px;
+}
+.welcome-background .details-text .txt-bottom {
+  width: calc(80%);
+}
+.welcome-background .details-text .frst-txt {
+  width: 100%;
+  margin-bottom: 5%;
+}
+.welcome-background .modal-header {
+  background-color: #EBEBEB;
+}
+.welcome-background .modal-footer {
+  background-color: #EBEBEB;
+  text-align: center;
+}
+.welcome-background .modal-content {
+  border-radius: 6px;
+}
+.welcome-background .modal-content h4 {
+  font-size: 30px;
+  font-family: 'Roboto', sans-serif;
+}
+.welcome-background .modal-dialog {
+  width: 70%;
+  overflow-y: initial !important;
+}
+.welcome-background .terms-text {
+  font-size: 18px;
+  font-family: Roboto;
+  font-weight: 300;
+  font-color: #2f373c;
+}
+.welcome-background h5 {
+  font-size: 14px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+}
+.welcome-background .terms-head {
+  font-size: 22px;
+  font-family: Roboto;
+  font-weight: 400;
+  font-color: #182127;
+}
+.welcome-background .modal-body {
+  height: 400px;
+  overflow-y: auto;
+}
+.welcome-background .btn-decline {
+  background: #A7B2BF;
+  border: 2px solid;
+  border-color: #A7B2BF;
+}
+/*Start of care team page*/
+.care-team,
+.app-wrappper {
+  padding-left: 118px;
+  background-color: #EFEEF3;
+  min-height: 100%;
+  position: relative;
+  padding-bottom: 120px;
+}
+.care-team .container,
+.app-wrappper .container {
+  margin-right: 0;
+  margin-top: 0;
+  padding-top: 70px;
+  width: 100%;
+}
+.care-team .procedure-txt,
+.app-wrappper .procedure-txt {
+  font-size: 18px;
+  font-family: Roboto;
+  font-weight: 400;
+}
+.care-team .nurse-details,
+.app-wrappper .nurse-details {
+  background-color: #FFFFFF;
+}
+.care-team .details-txt,
+.app-wrappper .details-txt {
+  font-size: 14px;
+  font-family: Roboto;
+  font-weight: 300;
+  font-color: #2f373c;
+}
+.care-team .img-responsive,
+.app-wrappper .img-responsive {
+  width: 100%;
+}
+.care-team .head-txt,
+.app-wrappper .head-txt {
+  font-size: 24px;
+  font-family: Roboto;
+  font-weight: 400;
+  float: left;
+  padding: 15px;
+}
+.care-team .nurse-div,
+.app-wrappper .nurse-div {
+  margin-top: 34px;
+}
+.care-team .inner-text,
+.app-wrappper .inner-text {
+  color: #0091D5;
+  font-size: 16px;
+  font-family: Roboto;
+  font-weight: 400;
+}
+.care-team .name-text,
+.app-wrappper .name-text {
+  margin-top: -8%;
+  position: absolute;
+  color: #0091D5;
+  font-size: 20px;
+  font-family: Roboto;
+  font-weight: 400;
+  margin-left: 3%;
+}
+.care-team .name-doc-text,
+.app-wrappper .name-doc-text {
+  margin-top: -11%;
+  position: absolute;
+  color: #0091D5;
+  font-size: 20px;
+  font-family: Roboto;
+  font-weight: 400;
+  margin-left: 3%;
+}
+.care-team .login-head,
+.app-wrappper .login-head {
+  background: white;
+}
+.care-team .viva-text,
+.app-wrappper .viva-text {
+  font-size: 22px;
+  font-family: Roboto;
+  font-weight: 400;
+  color: #A6A6A6;
+  vertical-align: middle;
+  margin-left: 1%;
+  margin-top: 7px;
+}
+/*start of dashboard page*/
+.head-text {
+  color: #456B9A;
+  font-size: 20px;
+  font-family: Roboto;
+  font-weight: 400;
+}
+.heading-text {
+  padding: 30px 18px;
+}
+.step-text {
+  font-size: 16px;
+  font-weight: 400;
+}
+/**********ROHIT's STYLE***********************/
+.left_head,
+.right_head {
+  float: right;
+}
+.left_head {
+  padding: 8px 0;
+}
+.left_head .dropdown {
+  float: right;
+  cursor: pointer;
+}
+.left_head .dropdown .dropdown-menu {
+  right: 15px;
+}
+.left_head .dropdown .dropdown-toggle {
+  padding: 15px 20px;
+}
+.right_head {
+  padding: 11px 20px;
+  text-align: center;
+  border-right: solid 1px #ddd;
+}
+.sidebar_icon {
+  display: block;
+  font-size: 24px;
+  margin: 10px 0;
+  text-align: center;
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+.logo {
+  padding: 15px 0 0 15px;
+  display: inline-block;
+    
+}
+/*********END ROhit's Style*************************************/
+#patientModal .modal-header {
+  background-color: #ebebeb;
+  border-radius: 5px 5px 0px 0px;
+  padding: 10px 15px;
+}
+#patientModal .modal-dialog {
+  width: 80%;
+}
+#patientModal .modal-title {
+  font-size: 24px;
+  padding: 0px 0px;
+}
+#patientModal .close span {
+  font-size: 30px;
+  position: relative;
+  top: 7px;
+}
+#patientModal .modal-footer {
+  background-color: #d4d6db;
+  border-radius: 0px 0px 5px 5px;
+  padding: 12px 15px;
+}
+#patientModal .modal-body {
+  max-height: 400px;
+  overflow-y: auto;
+  padding-right: 0px;
+}
+#patientModal .btnrow {
+  text-align: center;
+}
+#patientModal .btnrow button {
+  width: 113px;
+  font-size: 18px;
+  color: #fff;
+}
+#patientModal .btnrow .btn-default {
+  background-color: #a7b2bf;
+  border: 0px;
+}
+#patientModal .btnrow .btn-primary {
+  background-color: #0091d5;
+  border: 0px;
+}
+#patientModal small {
+  color: #768d9a;
+}
+#patientModal h3 {
+  color: #2b3944;
+  font-weight: 400;
+  padding: 30px 0px;
+  margin: 0px;
+}
+#patientModal h4 {
+  color: #2b3944;
+  padding: 20px 0px;
+}
+#patientModal p,
+#patientModal ul li {
+  font-size: 16px;
+  color: #182127;
+  line-height: 26px;
+  font-weight: 300;
+}
+#patientModal p strong {
+  font-size: 18px;
+  font-weight: 500;
+}
+#patientModal address {
+  margin-top: 30px;
+}
+#patientModal address p:first-child {
+  float: left;
+  width: 110px;
+}
+#patientModal address p:last-child {
+  float: right;
+  width: 270px;
+}
+#patientModal .phone {
+  margin-top: 30px;
+}
+#patientModal form {
+  margin-top: 30px;
+  width: 360px;
+}
+#patientModal form label {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+#patientModal form strong {
+  font-weight: 500;
+}
+#patientModal form textarea {
+  width: 100%;
+  height: 122px;
+  border: 1px solid #ccc;
+  resize: none;
+}
+#patientModal form input[type="text"] {
+  width: 160px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  height: 32px;
+  font-weight: 300;
+}
+#patientModal form .btnrow {
+  text-align: right;
+}
+#patientModal form input[type="text"]:first-child {
+  margin-right: 36px;
+}
+#patientModal form input[type="submit"] {
+  padding: 5px 0px;
+  width: 85px;
+  background-color: #0091d6;
+  border-radius: 3px;
+  font-size: 16px;
+  margin-right: 20px;
+}
+#patientModal form input[type="reset"] {
+  padding: 5px 0px;
+  width: 85px;
+  background-color: #b4b5c2;
+  border-radius: 3px;
+  color: #fff;
+  font-size: 16px;
+}
+#patientModal form .jfilestyle {
+  margin-top: 30px;
+}
+#patientModal form .jfilestyle input {
+  background-color: #fff;
+  border-radius: 0;
+  width: 211px;
+  margin-right: 25px;
+}
+#patientModal form .jfilestyle span label {
+  background-color: #b4b5c2;
+  border-radius: 3px;
+  color: #fff;
+  font-size: 16px;
+  margin: 0;
+  padding: 5px 10px;
+  width: 120px;
+}
+#patientModal .sign_underline {
+  border-top: 1px solid #333;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+#patientModal .half-line {
+  float: left;
+  width: 100%;
+  margin-top: 45px;
+  margin-bottom: 30px;
+  border-bottom: 1px solid #000;
+  line-height: 5px;
+}
+#patientModal .half-line strong {
+  background-color: #fff;
+}
+/*=====================Patient list============================*/
+.app-wrappper {
+  padding-top: 70px;
+  height: 100%;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+}
+.app-wrappper h1 {
+  background-color: #edeff4;
+  margin: 0px;
+  font-size: 22px;
+  color: #627085;
+  font-weight: 400;
+  padding: 18px 15px;
+  border-radius: 2px 2px 0px 0px;
+}
+.inner-wrapper {
+  margin: 20px;
+  background-color: #fff;
+  border: 1px solid #dee1ea;
+  border-radius: 2px 2px 0px 0px;
+  min-height: 93%;
+}
+.full-wrapper {
+  float: left;
+  width: 100%;
+  height: auto;
+  min-height: inherit;
+}
+.full-wrapper .inner-wrapper {
+  float: left;
+  width: calc(100% - 35px);
+}
+.edit-block ul {
+  padding-left: 40px;
+  margin-top: 40px;
+}
+.edit-block ul li {
+  float: left;
+  list-style: none;
+  background-color: #e1e4ed;
+  padding: 5px 10px 2px;
+  margin-right: 10px;
+  border: 1px solid #d0d4de;
+  border-radius: 2px;
+  color: #7c818e;
+}
+.edit-block ul li:last-child {
+  background-color: transparent;
+  padding: 0px;
+  border: 0px;
+}
+.edit-block ul li:last-child .btn-default {
+  padding: 5px 10px 2px;
+  border: 1px solid #d0d4de;
+  background-color: #e1e4ed;
+  border-radius: 2px;
+  color: #7c818e;
+}
+.edit-block ul li:last-child ul.dropdown-menu {
+  padding: 0px;
+  margin-top: 0px;
+}
+.edit-block ul li:last-child ul.dropdown-menu li {
+  width: 100%;
+  background-color: transparent;
+  padding: 0px;
+  border: 0px;
+  float: none;
+  margin: 0px;
+  font-size: 16px;
+}
+.edit-block ul li:last-child ul.dropdown-menu li a {
+  padding: 10px 20px;
+}
+.edit-block ul li:last-child ul.dropdown-menu li.divider {
+  background-color: #e5e5e5;
+}
+.block-right {
+  float: right;
+  margin-top: 40px;
+  margin-right: 40px;
+}
+.block-right .input-group {
+  float: left;
+  width: 185px;
+  margin-right: 20px;
+}
+.block-right input[type="search"] {
+  border-radius: 0px;
+  border: 1px solid #ddd;
+  box-shadow: none;
+  float: left;
+}
+.block-right .input-group-addon {
+  border-radius: 0px;
+  background-color: transparent;
+}
+.block-right input[type="button"] {
+  float: left;
+  border-radius: 3px;
+  background-color: #28c05d;
+  border: 1px solid #26AF56;
+  width: 138px;
+  font-size: 18px;
+  padding: 3px 0px;
+}
+.patient-table {
+  padding: 0px 40px ;
+  width: 100%;
+  margin-top: 20px;
+}
+.patient-table .inner-table {
+  float: left;
+  width: 100%;
+  overflow: auto;
+}
+.patient-table .table > thead > tr > th {
+  color: #627085;
+  font-weight: 500;
+  font-size: 16px;
+  border-color: #a3a7ba;
+  border-width: 1px;
+}
+.patient-table .checkbox {
+  position: relative;
+  top: 15px;
+}
+.patient-table .table {
+  min-width: 800px;
+}
+.patient-table .table > tbody > tr > td {
+  vertical-align: middle;
+  color: #737c89;
+  font-size: 14px;
+  border-color: #d1d3dc;
+  padding: 0px 8px;
+}
+.patient-table .table > tbody > tr > td .checkbox {
+  position: relative;
+  top: 2px;
+}
+.patient-table .table-striped > tbody > tr:nth-of-type(odd) {
+  background-color: #f8f8fb;
+}
+.patient-table .custom-checkbox {
+  float: left;
+  width: 18px;
+  height: 18px;
+  border: 1px solid #ccc;
+}
+.patient-table .checkbox label {
+  padding-left: 10px;
+}
+.patient-table .checkbox input[type="checkbox"] {
+  visibility: hidden;
+}
+.patient-table input[type="checkbox"]:checked ~ .custom-checkbox:before {
+  content: "\2713";
+}
+p.result-count {
+  padding-left: 40px;
+  font-size: 16px;
+  color: #747789;
+  padding-top: 20px;
+}
+.pagination {
+  float: right;
+  margin-right: 40px;
+}
+.pagination li span,
+.pagination li:first-child span,
+.pagination li:last-child span {
+  border-radius: 0px;
+}
+.pagination > .active > a,
+.pagination > .active > a:focus,
+.pagination > .active > a:hover,
+.pagination > .active > span,
+.pagination > .active > span:focus,
+.pagination > .active > span:hover {
+  background-color: #28c05d;
+  border-color: #dcdfe9;
+}
+/*=================================Add Patient===============================*/
+.patient-form {
+  padding: 20px;
+}
+.patient-form .form-group {
+  margin-bottom: 25px;
+  float: left;
+  width: 630px;
+  clear: both;
+}
+.patient-form h3 {
+  font-size: 18px;
+  color: #262d37;
+  margin-top: 10px;
+}
+.patient-form label {
+  font-size: 15px;
+  font-weight: 400;
+  color: #51566b;
+  height: 32px;
+}
+.patient-form .form-control {
+  box-shadow: none;
+  border-radius: 0px;
+  border-color: #bfc1d1;
+  float: left;
+}
+.patient-form .half-field .form-control {
+  width: 45.3%;
+  margin-right: 25px;
+}
+.patient-form .half-field .form-control:last-child {
+  margin-right: 0px;
+}
+.patient-form .dob select {
+  float: left;
+  width: 33%;
+}
+.patient-form .chosen-search {
+  display: none;
+}
+.patient-form .chosen-container {
+  float: left;
+  width: 95px !important;
+}
+.patient-form .chosen-container .chosen-single {
+  box-shadow: none;
+  background: transparent;
+  border-radius: 0px;
+  border-color: #bfc1d1;
+  color: #9197b2;
+  height: 34px;
+  padding-top: 4px;
+}
+.patient-form .chosen-container .chosen-single div {
+  top: 4px;
+}
+.patient-form .full-wid .chosen-container {
+  float: left;
+  width: 100% !important;
+}
+.patient-form .btn {
+  border-radius: 3px;
+  width: 100%;
+  font-size: 18px;
+  height: 38px;
+  line-height: 0px;
+  color: #fff;
+  font-weight: 400;
+    margin:10px 0;
+}
+.patient-form .btn.btn-default {
+  background-color: #c0cad4;
+}
+.patient-form .btn.btn-primary {
+  background-color: #0091d5;
+}
+.patient-form fieldset {
+  padding-bottom: 45px;
+  border-bottom: 1px solid #ccc;
+}
+.patient-form fieldset:last-child {
+  border-bottom: 0px;
+}
+.patient-form .input-group {
+  width: 100%;
+  float: left;
+}
+.bootstrap-timepicker-widget table td input {
+  box-shadow: none;
+  border: 0px;
+  font-size: 15px;
+  color: #51566b;
+  font-weight: 400;
+}
+/*=============================Profile Page==============================*/
+.profile {
+  padding-top: 30px;
+  padding-bottom: 60px;
+}
+.profile .media-left {
+  width: 162px;
+  float: left;
+  text-align: center;
+}
+.profile .media-left p {
+  padding: 15px 0px;
+  border-radius: 100%;
+  border: 1px solid #cfcece;
+  width: 105px;
+  height: 105px;
+  display: inline-block;
+}
+.profile .media-left img {
+  width: 100px;
+  border-radius: 100%;
+}
+.profile .media-left a {
+  padding-top: 24px;
+  display: block;
+  font-size: 14px;
+  color: #1c89e5;
+  font-weight: 400;
+  text-decoration: none;
+}
+.profile .media-body {
+  padding-right: 20px;
+}
+.profile .media-body h4 {
+  color: #2b2d5b;
+  font-size: 25px;
+  font-weight: 400;
+}
+.profile .media-body h5 {
+  font-size: 20px;
+  color: #56565e;
+  font-weight: 300;
+}
+.profile .media-body .block {
+  float: left;
+  width: 100%;
+  margin-top: 70px;
+}
+.profile .media-body .block h6 {
+  color: #2b2d5b;
+  font-size: 18px;
+  font-weight: 500;
+  border-bottom: 1px solid #ccc;
+  line-height: 35px;
+}
+.profile .media-body .block p {
+  float: left;
+  width: 30%;
+  color: #858585;
+  font-size: 15px;
+  padding-top: 10px;
+}
+.profile .media-body .block p strong {
+  font-weight: 500;
+  font-size: 16px;
+  float: left;
+  width: 100%;
+  color: #3e4349;
+}
+/*=====================================Profile===================================*/
+.hospital-image {
+  background: url("../images/hospital-bg.jpg") no-repeat top center;
+  height: 220px;
+  float: left;
+  width: calc(100% - 40px);
+  margin: 20px 20px 0px;
+}
+.hospital-block {
+  padding: 20px;
+}
+.hospital-block h2 {
+  font-size: 40px;
+  color: #0091d5;
+  font-weight: 300;
+}
+.hospital-block .details {
+  float: left;
+}
+.hospital-block .details p {
+  font-size: 18px;
+  color: #0091d5;
+  font-weight: 300;
+  padding: 0px;
+}
+.hospital-block img {
+  float: left;
+  margin-top: 25px;
+}
+.hospital-block p {
+  font-size: 18px;
+  clear: both;
+  color: #737d8c;
+  font-weight: 300;
+  padding-top: 15px;
+}
+.hospital-block .block {
+  float: left;
+  width: 50%;
+  padding: 50px 0px 20px;
+}
+.hospital-block .block p {
+  padding: 0px;
+  margin: 0px;
+}
+.hospital-block .block p strong {
+  font-weight: 400;
+}
+.hospital-block .block a {
+  font-size: 17px;
+  color: #0091d5;
+  font-weight: 300;
+}
+.hospital-block iframe {
+  width: 100%;
+  height: 220px;
+}
+.hospital-block h5 {
+  font-size: 18px;
+  color: #2c323c;
+}
+.hospital-block .video-block {
+  float: left;
+  padding-right: 30px;
+}
+.hospital-block .video-block p {
+  font-size: 14px;
+  color: #616b7b;
+  padding: 10px 0px;
+}
+/*================================HELP=====================================*/
+.wrapper-block {
+  float: left;
+  width: 100%;
+  padding-left: 120px;
+  padding-top: 70px;
+}
+.help-tab .nav {
+  background: #f0f1f7;
+  padding: 3px 45px;
+}
+.help-tab .nav li {
+  float: left;
+}
+.help-tab .nav li a {
+  position: relative;
+  display: block;
+  padding: 10px 45px;
+  font-size: 18px;
+  color: #4b5868;
+}
+.help-tab .nav li:first-child {
+  font-size: 30px;
+  font-weight: 500;
+  color: #2b3944;
+  width: 30%;
+}
+.help-tab .nav li:last-child {
+  float: right;
+}
+.help-tab .nav li:last-child input {
+  margin-top: 4px;
+  width: 290px;
+  box-shadow: none;
+  border: 1px solid #bfc1d3;
+  border-radius: 0px;
+}
+.help-tab .nav li.active a {
+  color: #0092d6;
+}
+.help-tab .nav li.active a:hover,
+.help-tab .nav li.active a:focus,
+.help-tab .nav li.active a:active {
+  color: #0092d6;
+  background: transparent;
+}
+.help-tab .nav li a:hover,
+.help-tab .nav li a:focus,
+.help-tab .nav li a:active {
+  color: #0092d6;
+  background: transparent;
+}
+.help-tab .tab-content {
+  padding: 45px;
+}
+.help-tab .tab-content .panel-group .panel {
+  border-radius: 0px;
+  border: 0px;
+  box-shadow: none;
+  border-bottom: 1px solid #e6e6e6;
+}
+.help-tab .tab-content .panel-group .panel .panel-heading {
+  background: transparent;
+  border: 0px;
+  border-radius: 0px;
+}
+.help-tab .tab-content .panel-group .panel .panel-heading h4 {
+  font-size: 22px;
+  font-weight: 300;
+}
+.help-tab .tab-content .panel-group .panel .panel-heading h4 a {
+  color: #2b3944;
+  text-decoration: none;
+  display: flex;
+}
+.help-tab .tab-content .panel-group .panel .panel-heading h4 a i {
+  background: url("../images/Expand_Collaps.png") no-repeat;
+  width: 30px;
+  float: left;
+  height: 24px;
+  background-position: 0px 0px;
+  margin-right: 10px;
+}
+.help-tab .tab-content .panel-default > .panel-heading + .panel-collapse > .panel-body {
+  border: 0px;
+  font-size: 16px;
+  color: #677c8c;
+  font-weight: 300;
+}
+.help-tab .tab-content .panel-default > .panel-heading + .panel-collapse > .panel-body p {
+  padding-left: 40px;
+}
+.help-tab .active .panel-group .panel .panel-heading h4 a i {
+  background-position: 0px -27px;
+}
+.help-tab .active .panel-group .panel .panel-heading h4 a.collapsed i {
+  background-position: 0px 0px;
+}
+
+.text-xs-left { text-align: left; }
+.text-xs-right { text-align: right; }
+.text-xs-center { text-align: center; }
+.text-xs-justify { text-align: justify; }
+
+@media (min-width: 768px) {
+    .text-sm-left { text-align: left; }
+    .text-sm-right { text-align: right; }
+    .text-sm-center { text-align: center; }
+    .text-sm-justify { text-align: justify; }
+}
+
+@media (min-width: 992px) {
+    .text-md-left { text-align: left; }
+    .text-md-right { text-align: right; }
+    .text-md-center { text-align: center; }
+    .text-md-justify { text-align: justify; }
+}
+
+@media (min-width: 1200px) {
+    .text-lg-left { text-align: left; }
+    .text-lg-right { text-align: right; }
+    .text-lg-center { text-align: center; }
+    .text-lg-justify { text-align: justify; }
+}
+/*=sidebar=navbar*/
+.logo-div
+{
+    background: transparent;
+}
+@media (max-width:768px){
+    .logo-div{
+    background-color: #ccc;
+        text-align: center;
+    padding: 0 0 10px 0;
+}
+    .side-bar {padding-top:130px!important;}
+    /*.right_head,.viva-text{display:none!important;}*/
+}
+
