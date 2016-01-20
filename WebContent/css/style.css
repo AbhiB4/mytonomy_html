@@ -373,6 +373,7 @@ html {
   height: 24px;
   margin-right: 15px;
   float: left;
+  margin: 10px 10px 0 0;
 }
 .timeline-block #accordion .panel-title .collapsed .icon {
   background-position: top left;
@@ -383,16 +384,20 @@ html {
 .timeline-block #accordion .panel-title .n_vid {
   font-size: 14px;
   color: #8f9aa6;
-  padding-left: 20px;
+  padding: 10px 0px;
+  display: inline-block;
+  float: left;
 }
 .timeline-block #accordion .panel-title .comp {
   font-size: 14px;
   font-weight: 500;
   color: #28c05d;
-  padding-left: 20px;
+  padding: 10px 20px;
+  /* clear: both; */
+  display: inline-block;
 }
 .timeline-block #accordion .panel-body {
-  padding-left: 60px;
+  padding-left: 20px;
   border: 0px;
 }
 .timeline-block #accordion .panel-body .block {
@@ -513,6 +518,40 @@ html {
 .timeline li:last-child:after {
   content: none;
 }
+@media (max-width:768px){
+   .timeline li {
+        width:95%!important;
+    }
+    .timeline li:after {
+        
+    }
+    .timeline li.active:last-child:after {
+  content: "";
+  width: 20px;
+  float: right;
+  height: 68px;
+  position: absolute;
+  right: -20px;
+  background: url("../images/Tracker_Front_Blue.png") no-repeat;
+  z-index: 1;
+  transition: background 1s;
+  -webkit-transition: background 1s;
+  -moz-transition: background 1s;
+}
+    .timeline li:last-child:after{
+        content: "";
+  width: 20px;
+  float: right;
+  height: 68px;
+  position: absolute;
+  right: -20px;
+  background: url("../images/Tracker_Front_Grey.png") no-repeat;
+  z-index: 1;
+    }
+    .timeline li.active:last-child:before{
+         content: none;
+    }
+}
 /*footer{
   position: absolute;
   bottom: 0;
@@ -580,6 +619,7 @@ header .viva-text {
   vertical-align: middle;
   margin-left: 1%;
   margin-top: 12px;
+        width: 100%;
 }
 header .login-head {
   background: #fff;
@@ -1576,5 +1616,8 @@ p.result-count {
     .right_head,.viva-text{display:none!important;}
     .side-bar span{display:none;}
     .care-team, .app-wrappper{padding-left:60px;}
+    .timeline-block #accordion .panel-body .block{
+        width:50%!important;
+    }
 }
 
