@@ -911,7 +911,7 @@ a:hover {
   padding: 10px 15px;
 }
 #patientModal .modal-dialog {
-  width: 80%;
+  width: 95%;
 }
 #patientModal .modal-title {
   font-size: 24px;
@@ -920,7 +920,6 @@ a:hover {
 #patientModal .close span {
   font-size: 30px;
   position: relative;
-  top: 7px;
 }
 #patientModal .modal-footer {
   background-color: #d4d6db;
@@ -936,7 +935,7 @@ a:hover {
   text-align: center;
 }
 #patientModal .btnrow button {
-  width: 113px;
+  width: 100px;
   font-size: 18px;
   color: #fff;
 }
@@ -967,6 +966,7 @@ a:hover {
   color: #182127;
   line-height: 26px;
   font-weight: 300;
+    clear:both;
 }
 #patientModal p strong {
   font-size: 18px;
@@ -980,7 +980,7 @@ a:hover {
   width: 110px;
 }
 #patientModal address p:last-child {
-  float: right;
+  /*float: right;*/
   width: 270px;
 }
 #patientModal .phone {
@@ -988,10 +988,10 @@ a:hover {
 }
 #patientModal form {
   margin-top: 30px;
-  width: 360px;
+  width: 100%;
 }
 #patientModal form label {
-  font-size: 20px;
+  font-size: 18px;
   margin-bottom: 10px;
 }
 #patientModal form strong {
@@ -1004,7 +1004,7 @@ a:hover {
   resize: none;
 }
 #patientModal form input[type="text"] {
-  width: 160px;
+  width: 100%;
   border: 1px solid #ccc;
   padding: 10px;
   height: 32px;
@@ -1014,7 +1014,8 @@ a:hover {
   text-align: right;
 }
 #patientModal form input[type="text"]:first-child {
-  margin-right: 36px;
+  /*margin-right: 10px;
+        margin-bottom: 10px;*/
 }
 #patientModal form input[type="submit"] {
   padding: 5px 0px;
@@ -1034,12 +1035,13 @@ a:hover {
 }
 #patientModal form .jfilestyle {
   margin-top: 30px;
+  width: 100%;
 }
 #patientModal form .jfilestyle input {
   background-color: #fff;
   border-radius: 0;
-  width: 211px;
-  margin-right: 25px;
+  width:auto!important;
+  margin:0 10px 10px 0;
 }
 #patientModal form .jfilestyle span label {
   background-color: #b4b5c2;
@@ -1061,7 +1063,7 @@ a:hover {
   margin-top: 45px;
   margin-bottom: 30px;
   border-bottom: 1px solid #000;
-  line-height: 5px;
+  line-height: 18px;
 }
 #patientModal .half-line strong {
   background-color: #fff;
@@ -1631,6 +1633,10 @@ p.result-count {
     .timeline-block #accordion .panel-body .block{
         width:50%!important;
     }
+    #patientModal .modal-title{
+        font-size: 18px;
+    }
+    
 }
 @media (max-width:420px){
     .timeline-block #accordion .panel-body .block{
