@@ -392,7 +392,7 @@ html {
   font-size: 14px;
   font-weight: 500;
   color: #28c05d;
-  padding: 10px 20px;
+  padding: 10px;
   /* clear: both; */
   display: inline-block;
 }
@@ -518,9 +518,21 @@ html {
 .timeline li:last-child:after {
   content: none;
 }
+.next-step {
+    text-align: center;
+    margin: 15px 0 0;
+}
+.next-step button.btn.btn-primary {
+    width: 60%;
+    padding: 10px;
+    font-size: 16px;
+        background-color: #0091d5;
+    border-color: #0091d5;
+    border-radius: 0;
+}
 @media (max-width:768px){
    .timeline li {
-        width:95%!important;
+        width:85%!important;
     }
     .timeline li:after {
         
@@ -1618,6 +1630,11 @@ p.result-count {
     .care-team, .app-wrappper{padding-left:60px;}
     .timeline-block #accordion .panel-body .block{
         width:50%!important;
+    }
+}
+@media (max-width:420px){
+    .timeline-block #accordion .panel-body .block{
+        width:100%!important;
     }
 }
 
