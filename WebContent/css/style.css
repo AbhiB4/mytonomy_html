@@ -546,21 +546,25 @@ header {
 }
 header .procedure-txt,
 header .details-txt {
-  margin-right: 24px;
+  margin-right: 10px;
 }
 header .details-txt {
-  margin-right: 0px;
+  margin-right: 0;
   white-space: normal;
   color: #666;
+    font-size:15px;
 }
 header .usr-img {
   border-radius: 100%;
-  width: 80px;
+  width: 70px;
+    vertical-align: top;
 }
 header .procedure-txt {
   font-size: 18px;
   font-family: Roboto;
   font-weight: 400;
+    text-align: left;
+    display: inline-block;
 }
 header .inner-text {
   color: #0091D5;
@@ -576,7 +580,6 @@ header .viva-text {
   vertical-align: middle;
   margin-left: 1%;
   margin-top: 12px;
-  word-break: normal;
 }
 header .login-head {
   background: #fff;
@@ -825,7 +828,7 @@ header .help-img {
   right: 15px;
 }
 .left_head .dropdown .dropdown-toggle {
-  padding: 15px 20px;
+  padding: 15px 5px;
 }
 .right_head {
   padding: 11px 20px;
@@ -1239,6 +1242,8 @@ p.result-count {
 .patient-form .chosen-container {
   float: left;
   width: 95px !important;
+        margin-right: 10px;
+    margin-bottom: 10px
 }
 .patient-form .chosen-container .chosen-single {
   box-shadow: none;
@@ -1558,13 +1563,18 @@ p.result-count {
 {
     background: transparent;
 }
+.margin-btm{
+    margin: 0 0 10px;
+}
 @media (max-width:768px){
-    .logo-div{
+    /*.logo-div{
     background-color: #ccc;
         text-align: center;
     padding: 0 0 10px 0;
-}
-    .side-bar {padding-top:130px!important;}
-    /*.right_head,.viva-text{display:none!important;}*/
+}*/
+    .side-bar {/*padding-top:130px!important;*/width:65px;}
+    .right_head,.viva-text{display:none!important;}
+    .side-bar span{display:none;}
+    .care-team, .app-wrappper{padding-left:60px;}
 }
 
