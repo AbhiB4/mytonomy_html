@@ -203,6 +203,12 @@ html {
   text-decoration: none;
   color: #fff;
 }
+.side-bar li {
+    opacity: 0.8;
+}
+.side-bar li.text-center.active{
+    opacity: 100;
+}
 .side-bar li:hover {
   cursor: pointer;
 }
@@ -381,20 +387,25 @@ html {
 .timeline-block #accordion .panel-title a {
   text-decoration: none;
 }
+.timeline-block #accordion .panel-title .heading {   
+    display: inline-block;
+    float: left;
+    margin: 10px 10px 0 0;
+}
 .timeline-block #accordion .panel-title .n_vid {
-  font-size: 14px;
-  color: #8f9aa6;
-  padding: 10px 0px;
-  display: inline-block;
-  float: left;
+    font-size: 14px;
+    color: #8f9aa6;
+    margin: 15px 0px;
+    display: inline-block;
+    float: left;
 }
 .timeline-block #accordion .panel-title .comp {
   font-size: 14px;
-  font-weight: 500;
-  color: #28c05d;
-  padding: 10px;
-  /* clear: both; */
-  display: inline-block;
+    font-weight: 500;
+    color: #28c05d;
+    padding: 15px 10px 0;
+    /* clear: both; */
+    display: inline-block;
 }
 .timeline-block #accordion .panel-body {
   padding-left: 20px;
@@ -404,6 +415,7 @@ html {
   float: left;
   width: 20%;
   margin-bottom: 20px;
+    margin-left:30px;
 }
 .timeline-block #accordion .panel-body .block .inner-block {
   position: relative;
@@ -417,6 +429,7 @@ html {
   padding: 5px;
   position: absolute;
   right: 15%;
+    font-size: 12px;
 }
 .timeline-block #accordion .panel-body .block .inner-block .duration {
   background-color: #111;
@@ -428,6 +441,7 @@ html {
   padding: 2px 5px;
   position: absolute;
   right: 16%;
+    font-size: 12px;
 }
 .timeline-block #accordion .panel-body .block .progress-bar {
   float: left;
@@ -436,8 +450,9 @@ html {
   background: #7ac943;
 }
 .timeline-block #accordion .panel-body .block p {
-  padding-right: 15%;
+  padding-right: 10%;
   padding-top: 15px;
+    color:#8f9aa6;
 }
 .timeline {
   padding-left: 0px;
@@ -629,9 +644,10 @@ header .viva-text {
   font-weight: 400;
   color: #A6A6A6;
   vertical-align: middle;
-  margin-left: 1%;
   margin-top: 12px;
         width: 100%;
+    display: inline;
+    margin-left: 10px;
 }
 header .login-head {
   background: #fff;
@@ -1618,6 +1634,14 @@ p.result-count {
 }
 .margin-btm{
     margin: 0 0 10px;
+}
+.care-team .panel-heading {
+    border-top: 1px solid #ccc;
+    padding-top: 25px;
+    padding-bottom: 25px
+}
+.care-team .panel-heading:last-child,.care-team .panel-heading:first-child{
+    border-top: 0;
 }
 @media (max-width:768px){
     /*.logo-div{
